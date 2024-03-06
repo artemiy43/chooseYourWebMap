@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
@@ -27,4 +27,18 @@ import HelloWorld from './components/HelloWorld.vue'
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
+</style> -->
+
+<script setup>
+import { AppLayout } from "./layouts";
+</script>
+
+<template>
+  <app-layout>
+    <router-view />
+  </app-layout>
+</template>
+
+<style lang="scss">
+@import "./assets/scss/app.scss";
 </style>
