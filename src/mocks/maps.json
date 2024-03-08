@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Google Maps"
+  },
+  {
+    "id": 2,
+    "name": "Яндекс Карты"
+  },
+  {
+    "id": 3,
+    "name": "Esri ArcGIS"
+  },
+  {
+    "id": 4,
+    "name": "Bing Maps"
+  },
+  {
+    "id": 5,
+    "name": "OpenLayers"
+  },
+  {
+    "id": 6,
+    "name": "Mapbox"
+  },
+  {
+    "id": 7,
+    "name": "amCharts 5"
+  },
+  {
+    "id": 8,
+    "name": "Cesium"
+  }
+]

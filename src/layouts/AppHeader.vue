@@ -2,13 +2,13 @@
   <header class="header">
     <div class="header_container">
       <router-link class="header--link" to="/"
-        ><span>Основное</span></router-link
+        ><span>Главная</span></router-link
       >
       <router-link class="header--link" to="/why">
         <span>Зачем нужны веб-карты?</span>
       </router-link>
       <router-link class="header--link" to="/list">
-        <span>Список современных технологий для создания веб-карт</span>
+        <span>Список современных библиотек для создания веб-карт</span>
       </router-link>
     </div>
     <div class="header_container">
@@ -25,31 +25,34 @@
 <style lang="scss" scoped>
 .header {
   width: 100%;
-  height: 200px;
+  height: 150px;
   // background-color: rgb(189, 231, 225);
   background-color: transparent;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   &--link {
-    background-color: rgb(243, 243, 243);
-    color: black;
+    background-color: transparent;
+    color: white;
     width: 200px;
-    height: 150px;
+    height: 100px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 20px;
     border-radius: 30px;
-    font-size: 26px;
+    font-size: 18px;
     line-height: 30px;
+    opacity: 1;
+    border: 1px solid transparent;
+    transition: all 1s ease-in-out;
   }
   &--link:hover {
-    background-color: rgb(53, 63, 70);
-    color: white;
+    opacity: 0.8;
+    border: 1px solid white;
   }
   &--logo {
     width: 200px;
