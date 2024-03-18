@@ -1,2 +1,11 @@
 @import "normalize.scss";
 @import "scaffolding.scss";
+
+@keyframes appearBorder {
+  from {
+    border: 1px solid transparent;
+  }
+  to {
+    border: 1px solid white;
+  }
+}

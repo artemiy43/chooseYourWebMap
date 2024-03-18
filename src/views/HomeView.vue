@@ -1,8 +1,8 @@
 <template>
   <main class="main">
     <section class="main_container_text">
-      <h1>Choose Your Web Map</h1>
-      <span
+      <h1 class="main_container_text--title">Choose Your Web Map</h1>
+      <span class="main_container_text--text"
         >Сайт разработан для помощи разработчикам в выборе подходящим для них
         инструментов в создании веб-карт.</span
       >
@@ -19,6 +19,7 @@
 </template>
 
 <style lang="scss" scoped>
+@import "@/assets/scss/app.scss";
 .main {
   width: 100%;
   height: 100vh;
@@ -36,7 +37,6 @@
 .main_container_links {
   width: 100%;
   height: 200px;
-  // background-color: rgb(189, 231, 225);
   background-color: transparent;
   display: flex;
   flex-direction: row;
@@ -83,53 +83,105 @@
 //   gap: 30px;
 // }
 
+@media (max-width: 1630px) {
+  .main_container_text--text {
+    line-height: 2;
+  }
+}
+
 @media (max-width: 1050px) {
-  //   .header--link {
-  //     width: 120px;
-  //     height: 95px;
-  //     font-size: 14px;
-  //   }
-  //   .header--logo {
-  //     width: 120px;
-  //     height: 95px;
-  //   }
+  .main_container_text {
+    margin: 150px 0 100px;
+  }
+
+  .main_container_links {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &--link {
+      background-color: transparent;
+      color: white;
+      width: 320px;
+      height: 150px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+      border-radius: 30px;
+      font-size: 26px;
+      line-height: 30px;
+      opacity: 1;
+      border: 1px solid transparent;
+      transition: all 1s ease-in-out;
+    }
+  }
 }
 
-@media (max-width: 650px) {
-  //   .header_container {
-  //     gap: 10px;
-  //   }
+@media (max-width: 750px) {
+  .main_container_text--title {
+    margin-bottom: 80px;
+  }
 
-  //   .header--link {
-  //     width: 100px;
-  //     height: 85px;
-  //     margin: 0;
-  //     line-height: 16px;
-  //     font-size: 12px;
-  //     word-wrap: break-word;
-  //   }
-  //   .header--logo {
-  //     width: 100px;
-  //     height: 85px;
-  //     margin: 0;
-  //   }
+  .main_container_text {
+    margin: 100px 0 100px;
+  }
+
+  .main_container_text--title {
+    font-size: 40px;
+  }
+  .main_container_text--text {
+    font-size: 26px;
+  }
+
+  .main_container_links {
+    &--link {
+      animation: appearBorder 2s ease-in-out 1s infinite alternate;
+    }
+  }
 }
 
-@media (max-width: 470px) {
-  //   .header_container {
-  //     gap: 0px;
-  //   }
+@media (max-width: 510px) {
+  .main_container_text--title {
+    margin-bottom: 60px;
+  }
 
-  //   .header--link {
-  //     width: 80px;
-  //     height: 65px;
-  //     line-height: 14px;
-  //     font-size: 10px;
-  //     word-wrap: break-word;
-  //   }
-  //   .header--logo {
-  //     width: 80px;
-  //     height: 65px;
-  //   }
+  .main_container_text {
+    margin: 75px 0 75px;
+  }
+
+  .main_container_text--title {
+    font-size: 24px;
+  }
+
+  .main_container_text--text {
+    font-size: 18px;
+  }
+
+  .main_container_links {
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &--link {
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .main_container_links {
+    &--link {
+      width: 300px;
+      height: 100px;
+    }
+  }
 }
 </style>

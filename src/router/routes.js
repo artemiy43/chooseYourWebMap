@@ -7,6 +7,13 @@ export default [
     children: [],
   },
   {
+    path: "/:name",
+    name: "MapView",
+    component: () => import("../views/MapView.vue"),
+    meta: { layout: "AppLayoutHeader" },
+    children: [],
+  },
+  {
     path: "/why",
     name: "WhyView",
     component: () => import("../views/WhyView.vue"),

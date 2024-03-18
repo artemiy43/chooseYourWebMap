@@ -1,7 +1,8 @@
 <template>
   <ul class="ingredients__list">
     <li v-for="map in mapStore.maps" :key="map.id">
-      {{ map.name }}
+      <span>{{ map.name }}</span>
+      <router-link :to="`/${map.name}`"> ссылочка</router-link>
     </li>
   </ul>
 </template>
