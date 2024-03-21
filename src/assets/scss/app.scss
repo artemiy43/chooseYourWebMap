@@ -9,3 +9,12 @@
     border: 1px solid white;
   }
 }
+
+@keyframes opening {
+  from {
+    height: 0;
+  }
+  to {
+    height: 500px;
+  }
+}

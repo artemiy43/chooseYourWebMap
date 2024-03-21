@@ -1,34 +1,42 @@
 [
   {
     "id": 1,
-    "name": "Google Maps"
+    "name": "Google Maps",
+    "src": "/Google_Maps.png"
   },
   {
     "id": 2,
-    "name": "Яндекс Карты"
+    "name": "Яндекс Карты",
+    "src": "/yandex_maps.jpg"
   },
   {
     "id": 3,
-    "name": "Esri ArcGIS"
+    "name": "Esri ArcGIS",
+    "src": "/esriarcgis.png"
   },
   {
     "id": 4,
-    "name": "Bing Maps"
+    "name": "Bing Maps",
+    "src": "/bing-maps.jpg"
   },
   {
     "id": 5,
-    "name": "OpenLayers"
+    "name": "OpenLayers",
+    "src": "/openlayers.png"
   },
   {
     "id": 6,
-    "name": "Mapbox"
+    "name": "Mapbox",
+    "src": "/mapbox.png"
   },
   {
     "id": 7,
-    "name": "amCharts 5"
+    "name": "amCharts 5",
+    "src": "/amCharts5.png"
   },
   {
     "id": 8,
-    "name": "Cesium"
+    "name": "Cesium",
+    "src": "/cesium.png"
   }
 ]
