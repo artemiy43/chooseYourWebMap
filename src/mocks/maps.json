@@ -18,7 +18,8 @@
     "documentation": "lox",
     "helpForDevelopers": true,
     "dependence": false,
-    "currentBrowsers": true
+    "currentBrowsers": true,
+    "frameworks": []
   },
   {
     "id": 2,
@@ -39,7 +40,8 @@
     "dependence": false,
     "currentBrowsers": true,
     "documentation": "lox",
-    "helpForDevelopers": true
+    "helpForDevelopers": true,
+    "frameworks": []
   },
   {
     "id": 3,
@@ -60,7 +62,8 @@
     "dependence": false,
     "currentBrowsers": true,
     "documentation": "lox",
-    "helpForDevelopers": true
+    "helpForDevelopers": true,
+    "frameworks": []
   },
   {
     "id": 4,
@@ -81,7 +84,8 @@
     "dependence": false,
     "currentBrowsers": true,
     "documentation": "lox",
-    "helpForDevelopers": true
+    "helpForDevelopers": true,
+    "frameworks": []
   },
   {
     "id": 5,
@@ -102,7 +106,8 @@
     "dependence": false,
     "currentBrowsers": true,
     "documentation": "lox",
-    "helpForDevelopers": false
+    "helpForDevelopers": false,
+    "frameworks": []
   },
   {
     "id": 6,
@@ -123,7 +128,8 @@
     "dependence": false,
     "currentBrowsers": true,
     "documentation": "lox",
-    "helpForDevelopers": true
+    "helpForDevelopers": true,
+    "frameworks": []
   },
   {
     "id": 7,
@@ -131,7 +137,7 @@
     "src": "/amCharts5.png",
     "createdAt": 2021,
     "licence": "amCharts copyright",
-    "views": ["плоская карта"],
+    "views": ["плоская карта", "виртуальный глобус"],
     "castomization": true,
     "layersChange": false,
     "services": [],
@@ -144,7 +150,8 @@
     "dependence": false,
     "currentBrowsers": true,
     "documentation": "lox",
-    "helpForDevelopers": true
+    "helpForDevelopers": true,
+    "frameworks": []
   },
   {
     "id": 8,
@@ -165,6 +172,7 @@
     "dependence": false,
     "currentBrowsers": true,
     "documentation": "lox",
-    "helpForDevelopers": true
+    "helpForDevelopers": true,
+    "frameworks": []
   }
 ]

@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@amcharts/amcharts4": "^4.10.38",
+    "@amcharts/amcharts4-geodata": "^4.1.28",
     "@amcharts/amcharts5": "^5.8.5",
     "pinia": "^2.1.7",
     "sass": "^1.71.1",

@@ -1,7 +1,6 @@
 <template>
   <main class="main">
     <div class="filters">
-      <!-- :class="filtersOpened === true && 'filters_opened'" -->
       <button type="menu" class="filters--button" @click="openMenu">
         Фильтры
       </button>
@@ -11,9 +10,6 @@
         </div>
       </transition>
     </div>
-    <!-- :class="
-          filtersOpened === true && 'filters--list filters--list_animation'
-        " -->
     <ul class="map_list">
       <li v-for="map in mapStore.maps" :key="map.id" class="map_list--element">
         <router-link :to="`/${map.name}`" class="map_list--element_link">
@@ -23,7 +19,6 @@
             class="map_list--element_picture"
           />
           <span class="map_list--element_name">{{ map.name }}</span>
-          <!-- <router-link :to="`/${map.name}`"> ссылочка</router-link> -->
         </router-link>
       </li>
     </ul>
@@ -33,6 +28,7 @@
 <script setup>
 import { useMapStore } from "../stores";
 import { ref } from "vue";
+import { getImageUrl } from "../components/helpers";
 const filtersOpened = ref(false);
 const mapStore = useMapStore();
 
@@ -40,11 +36,11 @@ const openMenu = () => {
   filtersOpened.value = !filtersOpened.value;
 };
 
-function getImageUrl(path) {
-  const publicUrl = "/src/assets";
-  return `${publicUrl}${path}`;
-  // return `${publicUrl}/${path}`;
-}
+// function getImageUrl(path) {
+//   const publicUrl = "/src/assets";
+//   return `${publicUrl}${path}`;
+//   // return `${publicUrl}/${path}`;
+// }
 </script>
 
 <style scoped lang="scss">
@@ -52,6 +48,7 @@ function getImageUrl(path) {
 
 .main {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -96,14 +93,15 @@ function getImageUrl(path) {
 
 .map_list {
   width: 100%;
-  height: 100vh;
+  //height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1;
+  grid-template-rows: repeat(3, 1fr);
   list-style: none;
   gap: 20px;
   margin: 0;
   padding: 0;
+  padding-bottom: 80px;
   justify-items: center;
   //align-content: center;
   // justify-content: center;
@@ -114,6 +112,7 @@ function getImageUrl(path) {
     width: 350px;
     height: 400px;
     background-color: rgba($color: #ffffff, $alpha: 1);
+    //background-color: transparent;
     border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
     border-radius: 5px;
     display: flex;
@@ -125,6 +124,11 @@ function getImageUrl(path) {
     color: #0f0f0f;
   }
 
+  &--element:hover {
+    box-shadow: 12px 12px 2px 1px rgba(104, 89, 89, 0.4);
+    transition: all 0.5s ease-in-out;
+  }
+
   &--element_link {
     width: 100%;
     display: flex;
@@ -132,7 +136,7 @@ function getImageUrl(path) {
     justify-content: start;
     align-items: center;
     text-align: center;
-    color: #0f0f0f;
+    color: black;
   }
 
   &--element_picture {
