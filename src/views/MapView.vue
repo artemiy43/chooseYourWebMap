@@ -4,6 +4,14 @@
     <div class="main--container">
       <ul class="main--container_list">
         <li class="main--map_quality">
+          <a
+            class="main--map_quality_value main--link"
+            :href="map.documentation"
+            target="_blank"
+            >Перейти к документации</a
+          >
+        </li>
+        <li class="main--map_quality">
           Год создания:
           <span class="main--map_quality_value">{{ map.createdAt }}</span>
         </li>
@@ -29,7 +37,7 @@
         </li>
         <li class="main--map_quality">
           Дополнительные сервисы:
-          <span class="main--map_quality_value">{{ map.services }} </span>
+          <span class="main--map_quality_value">{{ getMapServices() }} </span>
         </li>
         <li class="main--map_quality">
           Возможность создания тепловых карт:
@@ -65,10 +73,10 @@
           Форматы пространственных данных:
           <span class="main--map_quality_value">{{ getMapFormats() }} </span>
         </li>
-        <li class="main--map_quality">
+        <!-- <li class="main--map_quality">
           Ссылка на документацию:
           <span class="main--map_quality_value">{{ map.documentation }}</span>
-        </li>
+        </li> -->
         <li class="main--map_quality">
           Наличие поддержки от разработчиков библиотеки для ответов на вопросы
           или наличие открытого форума для общения и передачи опыта работы с
@@ -88,6 +96,10 @@
           <span class="main--map_quality_value">
             {{ map.currentBrowsers ? "Присутствует" : "Отсутствует" }}
           </span>
+        </li>
+        <li class="main--map_quality">
+          Форматы пространственных данных:
+          <span class="main--map_quality_value">{{ getMapFrameworks() }} </span>
         </li>
       </ul>
       <!-- <div class="main--company"> -->
@@ -124,6 +136,16 @@ const getMapFormats = () => {
   let string = map.dataFormats.join(", ");
   return string;
 };
+
+const getMapFrameworks = () => {
+  let string = map.frameworks.join(", ");
+  return string;
+};
+
+const getMapServices = () => {
+  let string = map.services.join(", ");
+  return string;
+};
 </script>
 
 <style lang="scss" scoped>
@@ -136,6 +158,7 @@ const getMapFormats = () => {
   justify-content: start;
   align-items: center;
   color: white;
+  padding-bottom: 60px;
 
   &--container {
     width: 100%;
@@ -153,7 +176,7 @@ const getMapFormats = () => {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 
   &--map_quality {
@@ -173,6 +196,13 @@ const getMapFormats = () => {
     object-position: center;
     //border: 1px solid rgba($color: #ffffff, $alpha: 0.3);
     //padding: 10px;
+  }
+
+  &--link {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
   }
 }
 </style>

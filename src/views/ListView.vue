@@ -6,7 +6,45 @@
       </button>
       <transition name="fade">
         <div v-if="filtersOpened" class="filters--list">
-          <div>првиетавоы</div>
+          <fieldset>
+            <legend>Функциональность:</legend>
+
+            <div>
+              <input type="checkbox" id="scales" name="scales" checked />
+              <label for="scales">Scales</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="horns" name="horns" />
+              <label for="horns">Horns</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Доступность:</legend>
+
+            <div>
+              <input type="checkbox" id="scales" name="scales" checked />
+              <label for="scales">Scales</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="horns" name="horns" />
+              <label for="horns">Horns</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Поддержка:</legend>
+
+            <div>
+              <input type="checkbox" id="scales" name="scales" checked />
+              <label for="scales">Scales</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="horns" name="horns" />
+              <label for="horns">Horns</label>
+            </div>
+          </fieldset>
         </div>
       </transition>
     </div>

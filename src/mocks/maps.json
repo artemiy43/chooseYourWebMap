@@ -8,18 +8,24 @@
     "views": ["плоская карта"],
     "castomization": true,
     "layersChange": true,
-    "services": [],
+    "services": [
+      "Геокодирование",
+      "Построение маршрутов",
+      "Матрица расстояний",
+      "Поиск по организациям",
+      "Просмотр улиц"
+    ],
     "heatMap": true,
     "clustering": true,
     "graphics": true,
     "analysData": false,
     "ApiConnection": true,
     "dataFormats": ["KML", "GeoJSON", "GeoRSS"],
-    "documentation": "lox",
+    "documentation": "https://developers.google.com/maps?hl=ru",
     "helpForDevelopers": true,
     "dependence": false,
     "currentBrowsers": true,
-    "frameworks": []
+    "frameworks": ["react.js"]
   },
   {
     "id": 2,
@@ -30,7 +36,12 @@
     "views": ["плоская карта"],
     "castomization": true,
     "layersChange": true,
-    "services": [],
+    "services": [
+      "Геокодирование",
+      "Построение маршрутов",
+      "Матрица расстояний",
+      "Поиск по организациям"
+    ],
     "heatMap": true,
     "clustering": true,
     "graphics": true,
@@ -39,9 +50,9 @@
     "dataFormats": ["GeoJSON"],
     "dependence": false,
     "currentBrowsers": true,
-    "documentation": "lox",
+    "documentation": "https://yandex.ru/maps-api/products/js-api/?from=club",
     "helpForDevelopers": true,
-    "frameworks": []
+    "frameworks": ["react.js", "vue.js"]
   },
   {
     "id": 3,
@@ -52,7 +63,12 @@
     "views": ["плоская карта", "виртуальный глобус"],
     "castomization": true,
     "layersChange": true,
-    "services": [],
+    "services": [
+      "Геокодирование",
+      "Построение маршрутов",
+      "Матрица расстояний",
+      "Поиск по организациям"
+    ],
     "heatMap": true,
     "clustering": true,
     "graphics": true,
@@ -61,9 +77,9 @@
     "dataFormats": ["GeoJSON", "GeoRSS", "KML", "KMZ", "GML", "GPX"],
     "dependence": false,
     "currentBrowsers": true,
-    "documentation": "lox",
+    "documentation": "https://developers.arcgis.com/javascript/latest/",
     "helpForDevelopers": true,
-    "frameworks": []
+    "frameworks": ["react.js", "vue.js", "Angular.js", "Ember.js"]
   },
   {
     "id": 4,
@@ -74,7 +90,12 @@
     "views": ["плоская карта"],
     "castomization": true,
     "layersChange": true,
-    "services": [],
+    "services": [
+      "Геокодирование",
+      "Построение маршрутов",
+      "Матрица расстояний",
+      "Поиск по организациям"
+    ],
     "heatMap": true,
     "clustering": true,
     "graphics": false,
@@ -83,7 +104,7 @@
     "dataFormats": ["GeoJSON", "GeoRSS", "KML", "KMZ", "GML", "GPX"],
     "dependence": false,
     "currentBrowsers": true,
-    "documentation": "lox",
+    "documentation": "https://learn.microsoft.com/en-us/bingmaps/",
     "helpForDevelopers": true,
     "frameworks": []
   },
@@ -105,9 +126,9 @@
     "dataFormats": ["GeoJSON", "TopoJSON", "KML", "GML"],
     "dependence": false,
     "currentBrowsers": true,
-    "documentation": "lox",
+    "documentation": "https://openlayers.org/",
     "helpForDevelopers": false,
-    "frameworks": []
+    "frameworks": ["react.js", "vue.js", "Angular.js", "Ember.js"]
   },
   {
     "id": 6,
@@ -118,7 +139,12 @@
     "views": ["плоская карта", "виртуальный глобус"],
     "castomization": true,
     "layersChange": true,
-    "services": [],
+    "services": [
+      "Геокодирование",
+      "Построение маршрутов",
+      "Матрица расстояний",
+      "Поиск по организациям"
+    ],
     "heatMap": true,
     "clustering": true,
     "graphics": true,
@@ -127,9 +153,9 @@
     "dataFormats": ["GeoJSON"],
     "dependence": false,
     "currentBrowsers": true,
-    "documentation": "lox",
+    "documentation": "https://www.mapbox.com/mapbox-gljs",
     "helpForDevelopers": true,
-    "frameworks": []
+    "frameworks": ["react.js", "vue.js", "Angular.js", "Ember.js"]
   },
   {
     "id": 7,
@@ -149,9 +175,17 @@
     "dataFormats": ["GeoJSON"],
     "dependence": false,
     "currentBrowsers": true,
-    "documentation": "lox",
+    "documentation": "https://www.amcharts.com/javascript-maps/",
     "helpForDevelopers": true,
-    "frameworks": []
+    "frameworks": [
+      "react.js",
+      "vue.js",
+      "Angular.js",
+      "Ember.js",
+      "Next.js",
+      "Remix.js",
+      "SvelteKit"
+    ]
   },
   {
     "id": 8,
@@ -171,8 +205,8 @@
     "dataFormats": ["GeoJSON", "CZML", "gITF"],
     "dependence": false,
     "currentBrowsers": true,
-    "documentation": "lox",
+    "documentation": "https://cesium.com/platform/cesiumjs/",
     "helpForDevelopers": true,
-    "frameworks": []
+    "frameworks": ["react.js", "vue.js"]
   }
 ]
