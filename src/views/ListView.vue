@@ -1,48 +1,143 @@
 <template>
   <main class="main">
     <div class="filters">
-      <button type="menu" class="filters--button" @click="openMenu">
-        Фильтры
-      </button>
+      <div class="filters--search_container">
+        <button type="menu" class="filters--button" @click="openMenu">
+          Фильтры
+        </button>
+        <!-- <input
+          type="search"
+          placeholder="google maps"
+          name="search"
+          class="filters--search"
+          @change="mapStore.search = $event.value"
+        /> -->
+      </div>
       <transition name="fade">
         <div v-if="filtersOpened" class="filters--list">
-          <fieldset>
-            <legend>Функциональность:</legend>
+          <fieldset class="filters--list_section">
+            <legend class="filters--legend">Функциональность</legend>
 
-            <div>
-              <input type="checkbox" id="scales" name="scales" checked />
-              <label for="scales">Scales</label>
+            <div class="filters--list_section_container">
+              <div>
+                <input type="checkbox" id="flat_map" name="flat_map" />
+                <label for="flat_map">плоская карта</label>
+              </div>
+              <div>
+                <input type="checkbox" id="globus" name="globus" />
+                <label for="globus">виртуальный глобус</label>
+              </div>
             </div>
 
-            <div>
-              <input type="checkbox" id="horns" name="horns" />
-              <label for="horns">Horns</label>
+            <div class="filters--list_section_container">
+              <div>
+                <input type="checkbox" id="clustering" name="clustering" />
+                <label for="clustering">кластеризация</label>
+              </div>
+              <div>
+                <input type="checkbox" id="heatmap" name="heatmap" />
+                <label for="heatmap">тепловые карты</label>
+              </div>
+            </div>
+
+            <div class="filters--list_section_container">
+              <div>
+                <input type="checkbox" id="analyse" name="analyse" />
+                <label for="analyse">сервисы для анализа данных</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="services" name="services" />
+                <label for="services"
+                  >дополнительные сервисы (геолокация, маршрутизация и
+                  др)</label
+                >
+              </div>
+            </div>
+
+            <div class="filters--list_section_container">
+              <div>
+                <input type="checkbox" id="3D" name="3D" />
+                <label for="3D">3D-объекты</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="layers" name="layers" />
+                <label for="layers">смена слоёв данных</label>
+              </div>
             </div>
           </fieldset>
-          <fieldset>
-            <legend>Доступность:</legend>
+          <fieldset class="filters--list_section">
+            <legend class="filters--legend">Доступность</legend>
 
-            <div>
-              <input type="checkbox" id="scales" name="scales" checked />
-              <label for="scales">Scales</label>
+            <div class="filters--list_section_container_big">
+              <div>
+                <input type="checkbox" id="GeoJSON" name="GeoJSON" />
+                <label for="GeoJSON">GeoJSON</label>
+              </div>
+              <div>
+                <input type="checkbox" id="TopoJSON" name="TopoJSON" />
+                <label for="TopoJSON">TopoJSON</label>
+              </div>
+              <div>
+                <input type="checkbox" id="GeoRSS" name="GeoRSS" />
+                <label for="GeoRSS">GeoRSS</label>
+              </div>
+              <div>
+                <input type="checkbox" id="KML" name="KML" />
+                <label for="KML">KML</label>
+              </div>
+              <div>
+                <input type="checkbox" id="KMZ" name="KMZ" />
+                <label for="KMZ">KMZ</label>
+              </div>
+              <div>
+                <input type="checkbox" id="GML" name="GML" />
+                <label for="GML">GML</label>
+              </div>
+              <div>
+                <input type="checkbox" id="GPX" name="GPX" />
+                <label for="GPX">GPX</label>
+              </div>
+              <div>
+                <input type="checkbox" id="CZML" name="CZML" />
+                <label for="CZML">CZML</label>
+              </div>
+              <div>
+                <input type="checkbox" id="gITF" name="gITF" />
+                <label for="gITF">gITF</label>
+              </div>
             </div>
 
-            <div>
-              <input type="checkbox" id="horns" name="horns" />
-              <label for="horns">Horns</label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Поддержка:</legend>
-
-            <div>
-              <input type="checkbox" id="scales" name="scales" checked />
-              <label for="scales">Scales</label>
-            </div>
-
-            <div>
-              <input type="checkbox" id="horns" name="horns" />
-              <label for="horns">Horns</label>
+            <div class="filters--list_section_container_big">
+              <div>
+                <input type="checkbox" id="react" name="react" />
+                <label for="react">react.js</label>
+              </div>
+              <div>
+                <input type="checkbox" id="vue" name="vue" />
+                <label for="vue">vue.js</label>
+              </div>
+              <div>
+                <input type="checkbox" id="angular" name="angular" />
+                <label for="angular">angular.js</label>
+              </div>
+              <div>
+                <input type="checkbox" id="ember" name="ember" />
+                <label for="ember">ember.js</label>
+              </div>
+              <div>
+                <input type="checkbox" id="next" name="next" />
+                <label for="next">next.js</label>
+              </div>
+              <div>
+                <input type="checkbox" id="remix" name="remix" />
+                <label for="remix">remix.js</label>
+              </div>
+              <div>
+                <input type="checkbox" id="svelteKit" name="svelteKit" />
+                <label for="svelteKit">svelteKit</label>
+              </div>
             </div>
           </fieldset>
         </div>
@@ -84,6 +179,12 @@ const openMenu = () => {
 <style scoped lang="scss">
 @import "@/assets/scss/app.scss";
 
+input {
+  width: 40px;
+  height: 20px;
+  margin: 0.5rem;
+}
+
 .main {
   width: 100%;
   height: 100%;
@@ -106,6 +207,27 @@ const openMenu = () => {
   gap: 10px;
   box-sizing: border-box;
 
+  &--search_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &--search {
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgba($color: #2b2a2a, $alpha: 0.5);
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+    color: white;
+    padding: 20px;
+    font-size: 22px;
+    line-height: 20px;
+  }
+
   &--button {
     width: 200px;
     height: 80px;
@@ -120,12 +242,63 @@ const openMenu = () => {
     width: 100%;
     height: 500px;
     background-color: transparent;
-    border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+    // border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+    display: flex;
+    flex-direction: row;
+  }
+
+  &--list_section {
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 10px;
+    min-inline-size: min-content;
   }
 
   &--list_animation {
     animation: opening 1s ease-in-out 1s 1 alternate;
     transition: all 1s ease-in-out;
+  }
+
+  &--legend {
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  &--list_section_container {
+    width: calc(50% - 40px);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &--list_section_container_big {
+    width: calc(50% - 40px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 

@@ -4,11 +4,10 @@
     <div class="main--container">
       <ul class="main--container_list">
         <li class="main--map_quality">
-          <a
-            class="main--map_quality_value main--link"
-            :href="map.documentation"
-            target="_blank"
-            >Перейти к документации</a
+          <a :href="map.documentation" target="_blank"
+            ><button class="main--map_quality_value main--link">
+              Перейти к документации
+            </button></a
           >
         </li>
         <li class="main--map_quality">
@@ -98,7 +97,7 @@
           </span>
         </li>
         <li class="main--map_quality">
-          Форматы пространственных данных:
+          Интеграции с фронтенд фреймворками:
           <span class="main--map_quality_value">{{ getMapFrameworks() }} </span>
         </li>
       </ul>
@@ -138,8 +137,12 @@ const getMapFormats = () => {
 };
 
 const getMapFrameworks = () => {
-  let string = map.frameworks.join(", ");
-  return string;
+  if (map.frameworks.length === 0) {
+    return "Отсутствуют";
+  } else {
+    let string = map.frameworks.join(", ");
+    return string;
+  }
 };
 
 const getMapServices = () => {
@@ -203,6 +206,25 @@ const getMapServices = () => {
     color: white;
     padding: 10px;
     border-radius: 5px;
+  }
+
+  @media (max-width: 1100px) {
+    .main {
+      &--container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &--container_list {
+        padding: 0;
+      }
+
+      &--company__pic {
+        width: 300px;
+        height: 300px;
+      }
+    }
   }
 }
 </style>
