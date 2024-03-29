@@ -5,13 +5,6 @@
         <button type="menu" class="filters--button" @click="openMenu">
           Фильтры
         </button>
-        <!-- <input
-          type="search"
-          placeholder="google maps"
-          name="search"
-          class="filters--search"
-          @change="mapStore.search = $event.value"
-        /> -->
       </div>
       <transition name="fade">
         <div v-if="filtersOpened" class="filters--list">
