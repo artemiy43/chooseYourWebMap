@@ -20,8 +20,8 @@
 
             <div class="filters--list_section_container">
               <div>
-                <input type="checkbox" id="flat_map" name="flat_map" />
-                <label for="flat_map">плоская карта</label>
+                <input type="checkbox" id="flatMap" name="flatMap" />
+                <label for="flatMap">плоская карта</label>
               </div>
               <div>
                 <input type="checkbox" id="globus" name="globus" />
@@ -31,23 +31,51 @@
 
             <div class="filters--list_section_container">
               <div>
-                <input type="checkbox" id="clustering" name="clustering" />
+                <input
+                  type="checkbox"
+                  id="clustering"
+                  name="clustering"
+                  @input="
+                    mapStore.filters[$event.target.name] = $event.target.checked
+                  "
+                />
                 <label for="clustering">кластеризация</label>
               </div>
               <div>
-                <input type="checkbox" id="heatmap" name="heatmap" />
-                <label for="heatmap">тепловые карты</label>
+                <input
+                  type="checkbox"
+                  id="heatMap"
+                  name="heatMap"
+                  @input="
+                    mapStore.filters[$event.target.name] = $event.target.checked
+                  "
+                />
+                <label for="heatMap">тепловые карты</label>
               </div>
             </div>
 
             <div class="filters--list_section_container">
               <div>
-                <input type="checkbox" id="analyse" name="analyse" />
-                <label for="analyse">сервисы для анализа данных</label>
+                <input
+                  type="checkbox"
+                  id="analysData"
+                  name="analysData"
+                  @input="
+                    mapStore.filters[$event.target.name] = $event.target.checked
+                  "
+                />
+                <label for="analysData">сервисы для анализа данных</label>
               </div>
 
               <div>
-                <input type="checkbox" id="services" name="services" />
+                <input
+                  type="checkbox"
+                  id="services"
+                  name="services"
+                  @input="
+                    mapStore.filters[$event.target.name] = $event.target.checked
+                  "
+                />
                 <label for="services"
                   >дополнительные сервисы (геолокация, маршрутизация и
                   др)</label
@@ -57,13 +85,55 @@
 
             <div class="filters--list_section_container">
               <div>
-                <input type="checkbox" id="3D" name="3D" />
-                <label for="3D">3D-объекты</label>
+                <input
+                  type="checkbox"
+                  id="graphics"
+                  name="graphics"
+                  @input="
+                    mapStore.filters[$event.target.name] = $event.target.checked
+                  "
+                />
+                <label for="graphics">3D-объекты</label>
               </div>
 
               <div>
-                <input type="checkbox" id="layers" name="layers" />
-                <label for="layers">смена слоёв данных</label>
+                <input
+                  type="checkbox"
+                  id="layersChange"
+                  name="layersChange"
+                  @input="
+                    mapStore.filters[$event.target.name] = $event.target.checked
+                  "
+                />
+                <label for="layersChange">смена слоёв данных</label>
+              </div>
+            </div>
+
+            <div class="filters--list_section_container">
+              <div>
+                <input
+                  type="checkbox"
+                  id="ApiConnection"
+                  name="ApiConnection"
+                  @input="
+                    mapStore.filters[$event.target.name] = $event.target.checked
+                  "
+                />
+                <label for="ApiConnection">подключение по API или CDN</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="helpForDevelopers"
+                  name="helpForDevelopers"
+                  @input="
+                    mapStore.filters[$event.target.name] = $event.target.checked
+                  "
+                />
+                <label for="helpForDevelopers"
+                  >поддержка и/или открытый форум от разработчиков</label
+                >
               </div>
             </div>
           </fieldset>
@@ -144,7 +214,11 @@
       </transition>
     </div>
     <ul class="map_list">
-      <li v-for="map in mapStore.maps" :key="map.id" class="map_list--element">
+      <li
+        v-for="map in mapStore.getFilteredMaps"
+        :key="map.id"
+        class="map_list--element"
+      >
         <router-link :to="`/${map.name}`" class="map_list--element_link">
           <img
             :src="getImageUrl(map.src)"
@@ -168,12 +242,6 @@ const mapStore = useMapStore();
 const openMenu = () => {
   filtersOpened.value = !filtersOpened.value;
 };
-
-// function getImageUrl(path) {
-//   const publicUrl = "/src/assets";
-//   return `${publicUrl}${path}`;
-//   // return `${publicUrl}/${path}`;
-// }
 </script>
 
 <style scoped lang="scss">
@@ -240,7 +308,7 @@ input {
 
   &--list {
     width: 100%;
-    height: 500px;
+    height: 700px;
     background-color: transparent;
     // border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
     display: flex;

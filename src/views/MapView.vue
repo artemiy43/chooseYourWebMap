@@ -36,7 +36,13 @@
         </li>
         <li class="main--map_quality">
           Дополнительные сервисы:
-          <span class="main--map_quality_value">{{ getMapServices() }} </span>
+          <span class="main--map_quality_value"
+            >{{
+              map.services
+                ? "Геокодирование, Построение маршрутов, Матрица расстояний, Поиск по организациям"
+                : "Отсутствуют"
+            }}
+          </span>
         </li>
         <li class="main--map_quality">
           Возможность создания тепловых карт:
@@ -145,10 +151,10 @@ const getMapFrameworks = () => {
   }
 };
 
-const getMapServices = () => {
-  let string = map.services.join(", ");
-  return string;
-};
+// const getMapServices = () => {
+//   let string = map.services.join(", ");
+//   return string;
+// };
 </script>
 
 <style lang="scss" scoped>
