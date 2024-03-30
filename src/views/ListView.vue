@@ -13,11 +13,21 @@
 
             <div class="filters--list_section_container">
               <div>
-                <input type="checkbox" id="flatMap" name="flatMap" />
+                <input
+                  type="checkbox"
+                  id="flatMap"
+                  name="flatMap"
+                  @input="mapStore.addView('flatMap', $event.target.checked)"
+                />
                 <label for="flatMap">плоская карта</label>
               </div>
               <div>
-                <input type="checkbox" id="globus" name="globus" />
+                <input
+                  type="checkbox"
+                  id="globus"
+                  name="globus"
+                  @input="mapStore.addView('globus', $event.target.checked)"
+                />
                 <label for="globus">виртуальный глобус</label>
               </div>
             </div>
@@ -134,72 +144,30 @@
             <legend class="filters--legend">Доступность</legend>
 
             <div class="filters--list_section_container_big">
-              <div>
-                <input type="checkbox" id="GeoJSON" name="GeoJSON" />
-                <label for="GeoJSON">GeoJSON</label>
-              </div>
-              <div>
-                <input type="checkbox" id="TopoJSON" name="TopoJSON" />
-                <label for="TopoJSON">TopoJSON</label>
-              </div>
-              <div>
-                <input type="checkbox" id="GeoRSS" name="GeoRSS" />
-                <label for="GeoRSS">GeoRSS</label>
-              </div>
-              <div>
-                <input type="checkbox" id="KML" name="KML" />
-                <label for="KML">KML</label>
-              </div>
-              <div>
-                <input type="checkbox" id="KMZ" name="KMZ" />
-                <label for="KMZ">KMZ</label>
-              </div>
-              <div>
-                <input type="checkbox" id="GML" name="GML" />
-                <label for="GML">GML</label>
-              </div>
-              <div>
-                <input type="checkbox" id="GPX" name="GPX" />
-                <label for="GPX">GPX</label>
-              </div>
-              <div>
-                <input type="checkbox" id="CZML" name="CZML" />
-                <label for="CZML">CZML</label>
-              </div>
-              <div>
-                <input type="checkbox" id="gITF" name="gITF" />
-                <label for="gITF">gITF</label>
+              <div v-for="dataFormat in dataFormats" :key="dataFormat">
+                <input
+                  type="checkbox"
+                  :id="dataFormat"
+                  :name="dataFormat"
+                  @input="
+                    mapStore.addDataFormat(dataFormat, $event.target.checked)
+                  "
+                />
+                <label :for="dataFormat">{{ dataFormat }}</label>
               </div>
             </div>
 
             <div class="filters--list_section_container_big">
-              <div>
-                <input type="checkbox" id="react" name="react" />
-                <label for="react">react.js</label>
-              </div>
-              <div>
-                <input type="checkbox" id="vue" name="vue" />
-                <label for="vue">vue.js</label>
-              </div>
-              <div>
-                <input type="checkbox" id="angular" name="angular" />
-                <label for="angular">angular.js</label>
-              </div>
-              <div>
-                <input type="checkbox" id="ember" name="ember" />
-                <label for="ember">ember.js</label>
-              </div>
-              <div>
-                <input type="checkbox" id="next" name="next" />
-                <label for="next">next.js</label>
-              </div>
-              <div>
-                <input type="checkbox" id="remix" name="remix" />
-                <label for="remix">remix.js</label>
-              </div>
-              <div>
-                <input type="checkbox" id="svelteKit" name="svelteKit" />
-                <label for="svelteKit">svelteKit</label>
+              <div v-for="framework in frameworks" :key="framework">
+                <input
+                  type="checkbox"
+                  :id="framework"
+                  :name="framework"
+                  @input="
+                    mapStore.addFramework(framework, $event.target.checked)
+                  "
+                />
+                <label :for="framework">{{ framework + ".js" }}</label>
               </div>
             </div>
           </fieldset>
@@ -228,7 +196,7 @@
 <script setup>
 import { useMapStore } from "../stores";
 import { ref } from "vue";
-import { getImageUrl } from "../components/helpers";
+import { getImageUrl, frameworks, dataFormats } from "../components/helpers";
 const filtersOpened = ref(false);
 const mapStore = useMapStore();
 

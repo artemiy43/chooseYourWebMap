@@ -133,7 +133,7 @@ const mapStore = useMapStore();
 const map = mapStore.maps.find((map) => map.name === name);
 
 const getMapViews = () => {
-  let string = map.views.join(", ");
+  let string = map.viewsRu.join(", ");
   return string;
 };
 

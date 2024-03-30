@@ -5,7 +5,8 @@
     "src": "/Google_Maps.png",
     "createdAt": 2005,
     "licence": "Google Copyright",
-    "views": ["плоская карта"],
+    "views": ["flatMap"],
+    "viewsRu": ["плоская карта"],
     "castomization": true,
     "layersChange": true,
     "services": true,
@@ -19,7 +20,7 @@
     "helpForDevelopers": true,
     "dependence": false,
     "currentBrowsers": true,
-    "frameworks": ["react.js"]
+    "frameworks": ["react"]
   },
   {
     "id": 2,
@@ -27,7 +28,8 @@
     "src": "/yandex_maps.jpg",
     "createdAt": 2004,
     "licence": "Yandex copyright",
-    "views": ["плоская карта"],
+    "views": ["flatMap"],
+    "viewsRu": ["плоская карта"],
     "castomization": true,
     "layersChange": true,
     "services": true,
@@ -41,7 +43,7 @@
     "currentBrowsers": true,
     "documentation": "https://yandex.ru/maps-api/products/js-api/?from=club",
     "helpForDevelopers": true,
-    "frameworks": ["react.js", "vue.js"]
+    "frameworks": ["react", "vue"]
   },
   {
     "id": 3,
@@ -49,7 +51,8 @@
     "src": "/esriarcgis.png",
     "createdAt": 2008,
     "licence": "Esri copyright",
-    "views": ["плоская карта", "виртуальный глобус"],
+    "views": ["flatMap", "globus"],
+    "viewsRu": ["плоская карта", "виртуальный глобус"],
     "castomization": true,
     "layersChange": true,
     "services": true,
@@ -63,7 +66,7 @@
     "currentBrowsers": true,
     "documentation": "https://developers.arcgis.com/javascript/latest/",
     "helpForDevelopers": true,
-    "frameworks": ["react.js", "vue.js", "Angular.js", "Ember.js"]
+    "frameworks": ["react", "vue", "angular", "ember"]
   },
   {
     "id": 4,
@@ -71,7 +74,8 @@
     "src": "/bing-maps.jpg",
     "createdAt": 2005,
     "licence": "Microsoft copyright",
-    "views": ["плоская карта"],
+    "views": ["flatMap"],
+    "viewsRu": ["плоская карта"],
     "castomization": true,
     "layersChange": true,
     "services": true,
@@ -93,7 +97,8 @@
     "src": "/openlayers.png",
     "createdAt": 2006,
     "licence": "BSD (Berkeley Software Distribution)",
-    "views": ["плоская карта"],
+    "views": ["flatMap"],
+    "viewsRu": ["плоская карта"],
     "castomization": true,
     "layersChange": true,
     "services": false,
@@ -107,7 +112,7 @@
     "currentBrowsers": true,
     "documentation": "https://openlayers.org/",
     "helpForDevelopers": false,
-    "frameworks": ["react.js", "vue.js", "Angular.js", "Ember.js"]
+    "frameworks": ["react", "vue", "angular", "ember"]
   },
   {
     "id": 6,
@@ -115,7 +120,8 @@
     "src": "/mapbox.png",
     "createdAt": 2010,
     "licence": "Mapbox copyright",
-    "views": ["плоская карта", "виртуальный глобус"],
+    "views": ["flatMap", "globus"],
+    "viewsRu": ["плоская карта", "виртуальный глобус"],
     "castomization": true,
     "layersChange": true,
     "services": true,
@@ -129,7 +135,7 @@
     "currentBrowsers": true,
     "documentation": "https://www.mapbox.com/mapbox-gljs",
     "helpForDevelopers": true,
-    "frameworks": ["react.js", "vue.js", "Angular.js", "Ember.js"]
+    "frameworks": ["react", "vue", "angular", "ember"]
   },
   {
     "id": 7,
@@ -137,7 +143,8 @@
     "src": "/amCharts5.png",
     "createdAt": 2021,
     "licence": "amCharts copyright",
-    "views": ["плоская карта", "виртуальный глобус"],
+    "views": ["flatMap", "globus"],
+    "viewsRu": ["плоская карта", "виртуальный глобус"],
     "castomization": true,
     "layersChange": false,
     "services": false,
@@ -152,13 +159,13 @@
     "documentation": "https://www.amcharts.com/javascript-maps/",
     "helpForDevelopers": true,
     "frameworks": [
-      "react.js",
-      "vue.js",
-      "Angular.js",
-      "Ember.js",
-      "Next.js",
-      "Remix.js",
-      "SvelteKit"
+      "react",
+      "vue",
+      "angular",
+      "ember",
+      "next",
+      "remix",
+      "svelteKit"
     ]
   },
   {
@@ -167,7 +174,8 @@
     "src": "/cesium.png",
     "createdAt": 2012,
     "licence": "cesium copyright",
-    "views": ["плоская карта", "виртуальный глобус"],
+    "views": ["flatMap", "globus"],
+    "viewsRu": ["плоская карта", "виртуальный глобус"],
     "castomization": true,
     "layersChange": true,
     "services": false,
@@ -181,6 +189,6 @@
     "currentBrowsers": true,
     "documentation": "https://cesium.com/platform/cesiumjs/",
     "helpForDevelopers": true,
-    "frameworks": ["react.js", "vue.js"]
+    "frameworks": ["react", "vue"]
   }
 ]
