@@ -22,10 +22,10 @@ watch(
         // Пробуем найти компонент из свойства meta и динамически импортировать его
         console.log("сработало");
         console.log(meta.layout);
-        //const component = await import(`./${meta.layout}.vue`);
-        const component = defineAsyncComponent(() =>
-          import(`./${meta.layout}.vue`)
-        );
+        const component = await import(`/src/layouts/${meta.layout}.vue`);
+        // const component = defineAsyncComponent(() =>
+        //   import(`./${meta.layout}.vue`)
+        // );
         console.log(component);
         layout.value = component?.default || AppLayoutDefault;
       } else {
