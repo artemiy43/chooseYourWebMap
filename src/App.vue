@@ -46,7 +46,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <script setup>
-import { AppLayout } from "@/layouts";
+import { AppLayout } from "@/components";
 </script>
 
 <style lang="scss">

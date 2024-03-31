@@ -5,10 +5,10 @@
 </template>
 
 <script setup>
-import { shallowRef, watch } from "vue";
+import { shallowRef, watch, defineAsyncComponent } from "vue";
 import { useRoute } from "vue-router";
-import AppLayoutDefault from "./AppLayoutDefault.vue";
-import AppLayoutHeader from "./AppLayoutHeader.vue";
+import AppLayoutDefault from "../layouts/AppLayoutDefault.vue";
+//import AppLayoutHeader from "./AppLayoutHeader.vue";
 
 const route = useRoute();
 const layout = shallowRef(null);
@@ -22,7 +22,10 @@ watch(
         // Пробуем найти компонент из свойства meta и динамически импортировать его
         console.log("сработало");
         console.log(meta.layout);
-        const component = await import(`./${meta.layout}.vue`);
+        //const component = await import(`./${meta.layout}.vue`);
+        const component = defineAsyncComponent(() =>
+          import(`./${meta.layout}.vue`)
+        );
         console.log(component);
         layout.value = component?.default || AppLayoutDefault;
       } else {
