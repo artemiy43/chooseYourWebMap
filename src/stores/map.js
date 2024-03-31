@@ -25,12 +25,10 @@ export const useMapStore = defineStore("map", {
     getFilteredMaps: (state) => {
       let filteredMaps = state.maps;
       for (let key in state.filters) {
-        //console.log(key);
         if (
-          state.filters[key] === true
-          // typeof state.filters[key] !== Array
+          state.filters[key] === true &&
+          Array.isArray(state.filters[key]) === false
         ) {
-          console.log(key);
           filteredMaps = filteredMaps.filter(
             (map) => state.filters[key] == map[key]
           );
@@ -39,10 +37,7 @@ export const useMapStore = defineStore("map", {
           Array.isArray(state.filters[key]) === true &&
           state.filters[key].length !== 0
         ) {
-          console.log(key);
-          console.log(state.filters[key]);
           for (let element in state.filters[key]) {
-            console.log(state.filters[key][element]);
             filteredMaps = filteredMaps.filter((map) =>
               map[key].includes(state.filters[key][element])
             );

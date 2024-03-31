@@ -20,7 +20,8 @@
     "helpForDevelopers": true,
     "dependence": false,
     "currentBrowsers": true,
-    "frameworks": ["react"]
+    "frameworks": ["react"],
+    "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией и большим сообществом. Библиотека обладает широким функционалом и связана с экосистемой Google, подходит для разного рода проектов."
   },
   {
     "id": 2,
@@ -43,7 +44,8 @@
     "currentBrowsers": true,
     "documentation": "https://yandex.ru/maps-api/products/js-api/?from=club",
     "helpForDevelopers": true,
-    "frameworks": ["react", "vue"]
+    "frameworks": ["react", "vue"],
+    "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией и хорошей детализацией на территории Российской Федерации. Библиотека обладает широким функционалом и связана с экосистемой Яндекс, подходит для разного рода российских проектов."
   },
   {
     "id": 3,
@@ -66,7 +68,8 @@
     "currentBrowsers": true,
     "documentation": "https://developers.arcgis.com/javascript/latest/",
     "helpForDevelopers": true,
-    "frameworks": ["react", "vue", "angular", "ember"]
+    "frameworks": ["react", "vue", "angular", "ember"],
+    "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией. Библиотека обладает широким функционалом, поэтому подходит для разного рода проектов."
   },
   {
     "id": 4,
@@ -89,7 +92,8 @@
     "currentBrowsers": true,
     "documentation": "https://learn.microsoft.com/en-us/bingmaps/",
     "helpForDevelopers": true,
-    "frameworks": []
+    "frameworks": [],
+    "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией. Библиотека обладает ограниченным функционалом и связана с экосистемой Microsoft, поэтому подходит для разного рода проектов с ограниченным функционалом.."
   },
   {
     "id": 5,
@@ -112,7 +116,8 @@
     "currentBrowsers": true,
     "documentation": "https://openlayers.org/",
     "helpForDevelopers": false,
-    "frameworks": ["react", "vue", "angular", "ember"]
+    "frameworks": ["react", "vue", "angular", "ember"],
+    "recommendation": "Библиотека является полностью бесплатной, однако с ограниченным функционалом. Хорошо подходит для пет-проектов и проектов для некоммерческого использования с ограниченным функционалом."
   },
   {
     "id": 6,
@@ -135,7 +140,8 @@
     "currentBrowsers": true,
     "documentation": "https://www.mapbox.com/mapbox-gljs",
     "helpForDevelopers": true,
-    "frameworks": ["react", "vue", "angular", "ember"]
+    "frameworks": ["react", "vue", "angular", "ember"],
+    "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией. Библиотека обладает широким функционалом, поэтому подходит для разного рода проектов."
   },
   {
     "id": 7,
@@ -166,7 +172,8 @@
       "next",
       "remix",
       "svelteKit"
-    ]
+    ],
+    "recommendation": "Библиотека подходит для проектов с визуализацией различной статистической информации. Библиотека легка в освоении и кастомизации, обладает подробной документацией."
   },
   {
     "id": 8,
@@ -189,6 +196,7 @@
     "currentBrowsers": true,
     "documentation": "https://cesium.com/platform/cesiumjs/",
     "helpForDevelopers": true,
-    "frameworks": ["react", "vue"]
+    "frameworks": ["react", "vue"],
+    "recommendation": "Библиотека подходит для проектов со сложными 3D-сценами. Библиотека сложна в освоении и кастомизации, обладает подробной документацией."
   }
 ]

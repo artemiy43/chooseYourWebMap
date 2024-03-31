@@ -106,6 +106,10 @@
           Интеграции с фронтенд фреймворками:
           <span class="main--map_quality_value">{{ getMapFrameworks() }} </span>
         </li>
+        <li class="main--map_quality">
+          Рекомендации:
+          <span class="main--map_quality_value">{{ map.recommendation }} </span>
+        </li>
       </ul>
       <!-- <div class="main--company"> -->
       <img
