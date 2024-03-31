@@ -29,7 +29,7 @@ watch(
         "Динамический шаблон не найден. Установлен шаблон по-умолчанию.",
         e
       );
-      layout.value = AppLayoutDefault;
+      layout.value = AppLayoutHeader;
     }
   }
 );

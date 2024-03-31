@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Google Maps",
-    "src": "/src/assets/Google_Maps.png",
+    "src": "Google_Maps.png",
     "createdAt": 2005,
     "licence": "Google Copyright",
     "views": ["flatMap"],

@@ -189,7 +189,7 @@
       >
         <router-link :to="`/${map.name}`" class="map_list--element_link">
           <img
-            :src="map.src"
+            :src="getImageUrl(map.src)"
             :alt="map.name"
             class="map_list--element_picture"
           />
@@ -216,6 +216,11 @@ const openMenu = () => {
 //   return `${publicUrl}${path}`;
 //   // return `${publicUrl}/${path}`;
 // };
+
+function getImageUrl(name) {
+  const url = new URL(`/src/assets/${name}`, import.meta.url).href;
+  return url;
+}
 </script>
 
 <style scoped lang="scss">
