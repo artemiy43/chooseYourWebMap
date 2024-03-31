@@ -203,7 +203,7 @@
 <script setup>
 import { useMapStore } from "../stores";
 import { ref } from "vue";
-import { frameworks, dataFormats } from "../components/helpers";
+import { getImageUrl, frameworks, dataFormats } from "../components/helpers";
 const filtersOpened = ref(false);
 const mapStore = useMapStore();
 
@@ -217,10 +217,10 @@ const openMenu = () => {
 //   // return `${publicUrl}/${path}`;
 // };
 
-function getImageUrl(name) {
-  const url = new URL(`/src/assets/${name}`, import.meta.url).href;
-  return url;
-}
+// function getImageUrl(name) {
+//   const url = new URL(`/src/assets/${name}`, import.meta.url).href;
+//   return url;
+// }
 </script>
 
 <style scoped lang="scss">

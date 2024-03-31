@@ -26,7 +26,7 @@
   {
     "id": 2,
     "name": "Яндекс Карты",
-    "src": "/src/assets/yandex_maps.jpg",
+    "src": "yandex_maps.jpg",
     "createdAt": 2004,
     "licence": "Yandex copyright",
     "views": ["flatMap"],
@@ -50,7 +50,7 @@
   {
     "id": 3,
     "name": "Esri ArcGIS",
-    "src": "/src/assets/esriarcgis.png",
+    "src": "esriarcgis.png",
     "createdAt": 2008,
     "licence": "Esri copyright",
     "views": ["flatMap", "globus"],
@@ -74,7 +74,7 @@
   {
     "id": 4,
     "name": "Bing Maps",
-    "src": "/src/assets/bing-maps.jpg",
+    "src": "bing-maps.jpg",
     "createdAt": 2005,
     "licence": "Microsoft copyright",
     "views": ["flatMap"],
@@ -98,7 +98,7 @@
   {
     "id": 5,
     "name": "OpenLayers",
-    "src": "/src/assets/openlayers.png",
+    "src": "openlayers.png",
     "createdAt": 2006,
     "licence": "BSD (Berkeley Software Distribution)",
     "views": ["flatMap"],
@@ -122,7 +122,7 @@
   {
     "id": 6,
     "name": "Mapbox",
-    "src": "/src/assets/mapbox.png",
+    "src": "mapbox.png",
     "createdAt": 2010,
     "licence": "Mapbox copyright",
     "views": ["flatMap", "globus"],
@@ -146,7 +146,7 @@
   {
     "id": 7,
     "name": "amCharts 5",
-    "src": "/src/assets/amCharts5.png",
+    "src": "amCharts5.png",
     "createdAt": 2021,
     "licence": "amCharts copyright",
     "views": ["flatMap", "globus"],
@@ -178,7 +178,7 @@
   {
     "id": 8,
     "name": "Cesium",
-    "src": "/src/assets/cesium.png",
+    "src": "cesium.png",
     "createdAt": 2012,
     "licence": "cesium copyright",
     "views": ["flatMap", "globus"],

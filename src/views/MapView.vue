@@ -112,7 +112,11 @@
         </li>
       </ul>
       <!-- <div class="main--company"> -->
-      <img :src="map.src" :alt="map.name" class="main--company__pic" />
+      <img
+        :src="getImageUrl(map.src)"
+        :alt="map.name"
+        class="main--company__pic"
+      />
       <!-- </div> -->
     </div>
   </main>

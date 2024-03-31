@@ -7,14 +7,14 @@
         инструментов в создании веб-карт.</span
       >
     </section>
-    <section class="main_container_links">
+    <!-- <section class="main_container_links">
       <router-link class="main_container_links--link" to="/why">
         <span>Зачем нужны веб-карты?</span>
       </router-link>
       <router-link class="main_container_links--link" to="/list">
         <span>Список современных библиотек для создания веб-карт</span>
       </router-link>
-    </section>
+    </section> -->
   </main>
 </template>
 
