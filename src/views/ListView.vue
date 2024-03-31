@@ -189,7 +189,7 @@
       >
         <router-link :to="`/${map.name}`" class="map_list--element_link">
           <img
-            :src="getImageUrl(map.src)"
+            :src="map.src"
             :alt="map.name"
             class="map_list--element_picture"
           />
@@ -203,13 +203,19 @@
 <script setup>
 import { useMapStore } from "../stores";
 import { ref } from "vue";
-import { getImageUrl, frameworks, dataFormats } from "../components/helpers";
+import { frameworks, dataFormats } from "../components/helpers";
 const filtersOpened = ref(false);
 const mapStore = useMapStore();
 
 const openMenu = () => {
   filtersOpened.value = !filtersOpened.value;
 };
+
+// const getImageUrl = (path) => {
+//   const publicUrl = "@/assets";
+//   return `${publicUrl}${path}`;
+//   // return `${publicUrl}/${path}`;
+// };
 </script>
 
 <style scoped lang="scss">

@@ -1,5 +1,5 @@
 export function getImageUrl(path) {
-  const publicUrl = "/src/assets";
+  const publicUrl = "../assets";
   return `${publicUrl}${path}`;
   // return `${publicUrl}/${path}`;
 }

@@ -30,8 +30,18 @@ import HelloWorld from './components/HelloWorld.vue'
 </style> -->
 
 <template>
-  <app-layout>
+  <!-- <app-layout>
     <router-view />
+  </app-layout> -->
+
+  <app-layout>
+    <router-view v-slot="{ Component, route }">
+      <transition name="slide" mode="out-in">
+        <div :key="route.name">
+          <component :is="Component"></component>
+        </div>
+      </transition>
+    </router-view>
   </app-layout>
 </template>
 
@@ -41,4 +51,17 @@ import { AppLayout } from "@/layouts";
 
 <style lang="scss">
 @import "@/assets/scss/app.scss";
+
+.slide-enter-active {
+  transition: all 0.4s;
+}
+.slide-enter {
+  opacity: 0;
+  margin-left: 90px;
+}
+.slide-leave-active {
+  transition: all 0.4s;
+  opacity: 0;
+  margin-left: -100px;
+}
 </style>
