@@ -22,7 +22,7 @@ watch(
         // Пробуем найти компонент из свойства meta и динамически импортировать его
         console.log("сработало");
         console.log(meta.layout);
-        const component = await import(`/src/layouts/${meta.layout}.vue`);
+        const component = await import(`../layouts/${meta.layout}.vue`);
         // const component = defineAsyncComponent(() =>
         //   import(`./${meta.layout}.vue`)
         // );
