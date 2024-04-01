@@ -111,13 +111,27 @@
           <span class="main--map_quality_value">{{ map.recommendation }} </span>
         </li>
       </ul>
-      <!-- <div class="main--company"> -->
-      <img
-        :src="getImageUrl(map.src)"
-        :alt="map.name"
-        class="main--company__pic"
-      />
-      <!-- </div> -->
+      <div class="main--company">
+        <img
+          :src="getImageUrl(map.src)"
+          :alt="map.name"
+          class="main--company__pic"
+        />
+        <div class="main--company_links">
+          <a
+            class="main--company_links_github main--company_links_element"
+            :href="map.github"
+            target="_blank"
+            >Github</a
+          >
+          <a
+            class="main--company_links_playground main--company_links_element"
+            :href="map.playground"
+            target="_blank"
+            >Jsfiddle playground example</a
+          >
+        </div>
+      </div>
     </div>
   </main>
 </template>
@@ -216,6 +230,7 @@ const getMapFrameworks = () => {
     color: white;
     padding: 10px;
     border-radius: 5px;
+    text-align: center;
   }
 
   &--link:hover {
@@ -224,22 +239,89 @@ const getMapFrameworks = () => {
     cursor: pointer;
   }
 
-  @media (max-width: 1100px) {
-    .main {
-      &--container {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-      }
+  &--company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-      &--container_list {
-        padding: 0;
-      }
+  &--company_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &--company_links_element:hover {
+    box-shadow: 9px 9px 2px 1px rgba(104, 89, 89, 0.4);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
 
-      &--company__pic {
-        width: 300px;
-        height: 300px;
-      }
+  &--company_links_github {
+    margin-right: 25px;
+    width: 200px;
+    height: 75px;
+    background-color: rgb(49, 53, 58);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  &--company_links_playground {
+    margin-right: 25px;
+    width: 200px;
+    height: 75px;
+    background-color: rgb(135, 188, 253);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .main {
+    &--container {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--container_list {
+      padding: 0;
+    }
+
+    &--company__pic {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    &--company_links {
+      flex-direction: column;
+    }
+
+    &--company_links_github {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
+    &--company_links_playground {
+      margin-right: 0;
+      margin-bottom: 15px;
     }
   }
 }

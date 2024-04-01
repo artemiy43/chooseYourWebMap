@@ -17,19 +17,25 @@
     <section class="section">
       <h1 class="section--title">Что такое ГИС?</h1>
       <div class="section--container">
-        <ul class="section--text_container_list right-border">
-          Географическая информационная система (ГИС) - это система, созданная
-          для хранения, управления и анализа пространственных данных. ГИС
-          визуализирует и анализирует пространственные данные на карте для
-          дальнейшего использования в научных или прикладных целях. Для анализа
-          данных вместе с веб-картами могут использоваться следующие
-          географические сервисы:
-          <li class="section--text_container_element">
+        <ul class="section--text_container_table right-border">
+          <li class="section--text_container_table_element">
+            Географическая информационная система (ГИС) - это система, созданная
+            для хранения, управления и анализа пространственных данных. ГИС
+            визуализирует и анализирует пространственные данные на карте для
+            дальнейшего использования в научных или прикладных целях. Для
+            анализа данных вместе с веб-картами могут использоваться следующие
+            географические сервисы:
+          </li>
+          <li class="section--text_container_table_element">
             сервис прямого и обратного геокодирования
           </li>
-          <li class="section--text_container_element">сервис геолокации</li>
-          <li class="section--text_container_element">сервис маршрутизации</li>
-          <li class="section--text_container_element">
+          <li class="section--text_container_table_element">
+            сервис геолокации
+          </li>
+          <li class="section--text_container_table_element">
+            сервис маршрутизации
+          </li>
+          <li class="section--text_container_table_element">
             сервис мест и организаций
           </li>
         </ul>
@@ -351,10 +357,12 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+    //gap: 10px;
     font-size: 18px;
     line-height: 30px;
     list-style: none;
+    justify-items: center;
+    align-items: center;
   }
 
   &--picture {
@@ -380,14 +388,17 @@ export default {
     margin-left: 40px;
     justify-self: start;
     align-self: flex-start;
+    text-align: center;
   }
 
   &--text_container_table_element {
     width: 320px;
     height: 80px;
-    padding: 20px;
-    justify-self: center;
-    align-self: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     border-radius: 10px;
     border: 1px solid rgba($color: #000000, $alpha: 0.3);
   }
