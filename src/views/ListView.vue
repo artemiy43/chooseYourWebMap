@@ -2,9 +2,14 @@
   <main class="main">
     <div class="filters">
       <div class="filters--search_container">
-        <button type="menu" class="filters--button" @click="openMenu">
+        <button
+          type="menu"
+          class="filters--button"
+          @click="openMenu"
+          data-test="filters"
+        >
           <img
-            src="../assets/filters.png"
+            src="../assets/filter4.png"
             alt="фильтры"
             class="filters--button_icon"
           />
@@ -178,7 +183,7 @@
       </div>
       <!-- </transition> -->
     </div>
-    <h2>
+    <h2 class="count">
       {{ mapStore.getFilteredMaps.length + " из " + mapStore.maps.length }}
     </h2>
     <ul class="map_list">
@@ -232,6 +237,10 @@ input {
   margin: 0.5rem;
 }
 
+.count {
+  color: #000;
+  font-size: 26px;
+}
 .main {
   width: 100%;
   height: 100%;
@@ -244,7 +253,7 @@ input {
 .filters {
   width: 100%;
   //height: 100%;
-  background-color: #423030;
+  background-color: #6b99df;
   margin-bottom: 30px;
   border-radius: 10px;
   padding: 10px;
@@ -278,8 +287,8 @@ input {
   &--button {
     width: 200px;
     height: 65px;
-    background-color: rgb(197, 197, 197);
-    color: black;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
     font-size: 24px;
     margin-left: 20px;
     border-radius: 10px;
@@ -384,7 +393,7 @@ input {
     height: 400px;
     background-color: rgba($color: #ffffff, $alpha: 1);
     //background-color: transparent;
-    border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+    border: 2px solid rgba($color: #000000, $alpha: 0.2);
     border-radius: 5px;
     display: flex;
     justify-content: start;

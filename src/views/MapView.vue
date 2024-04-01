@@ -170,7 +170,7 @@ const getMapFrameworks = () => {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  color: white;
+  color: rgb(0, 0, 0);
   padding-bottom: 60px;
 
   &--container {
@@ -212,7 +212,7 @@ const getMapFrameworks = () => {
   }
 
   &--link {
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(112, 167, 240);
     color: white;
     padding: 10px;
     border-radius: 5px;

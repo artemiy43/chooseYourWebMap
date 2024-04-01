@@ -36,7 +36,7 @@
 
   &--link {
     background-color: transparent;
-    color: white;
+    color: rgb(0, 0, 0);
     width: 300px;
     height: 100px;
     text-align: center;
@@ -47,12 +47,12 @@
     font-size: 24px;
     line-height: 30px;
     opacity: 1;
-    border: 1px solid transparent;
+    border: 1px solid black;
     transition: all 1s ease-in-out;
   }
   &--link:hover {
     opacity: 0.8;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
   }
   // &--logo {
   //   width: 200px;

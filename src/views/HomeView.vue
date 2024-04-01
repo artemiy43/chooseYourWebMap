@@ -15,6 +15,7 @@
         <span>Список современных библиотек для создания веб-карт</span>
       </router-link>
     </section>
+    <img src="../assets/planet.gif" alt="планета" class="main_pic" />
   </main>
 </template>
 
@@ -28,8 +29,17 @@
   justify-content: start;
   align-items: center;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 30px;
+  // background-color: white;
+  // color: black;
+}
+
+.main_pic {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
 }
 .main_container_text {
   margin: 200px 0 100px;
@@ -45,7 +55,7 @@
 
   &--link {
     background-color: transparent;
-    color: white;
+    color: rgb(0, 0, 0);
     width: 320px;
     height: 150px;
     text-align: center;
@@ -58,11 +68,12 @@
     line-height: 30px;
     opacity: 1;
     border: 1px solid transparent;
-    transition: all 1s ease-in-out;
+    // transition: all 1s ease-in-out;
+    border: 1px solid rgb(0, 0, 0);
   }
   &--link:hover {
     opacity: 0.8;
-    border: 1px solid white;
+    border: 3px solid rgb(0, 0, 0);
   }
   //   &--logo {
   //     width: 200px;

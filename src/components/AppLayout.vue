@@ -8,7 +8,6 @@
 import { shallowRef, watch, defineAsyncComponent } from "vue";
 import { useRoute } from "vue-router";
 import AppLayoutDefault from "../layouts/AppLayoutDefault.vue";
-//import AppLayoutHeader from "./AppLayoutHeader.vue";
 
 const route = useRoute();
 const layout = shallowRef(null);

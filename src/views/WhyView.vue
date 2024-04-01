@@ -25,12 +25,12 @@
           данных вместе с веб-картами могут использоваться следующие
           географические сервисы:
           <li class="section--text_container_element">
-            сервис прямого и обратного геокодирования;
+            сервис прямого и обратного геокодирования
           </li>
-          <li class="section--text_container_element">сервис геолокации;</li>
-          <li class="section--text_container_element">сервис маршрутизации;</li>
+          <li class="section--text_container_element">сервис геолокации</li>
+          <li class="section--text_container_element">сервис маршрутизации</li>
           <li class="section--text_container_element">
-            сервис мест и организаций.
+            сервис мест и организаций
           </li>
         </ul>
         <div class="section--picture gis"></div>
@@ -47,16 +47,16 @@
             Google Maps и Яндекс Карты. Веб-карты можно увидеть в системах для:
           </li>
           <li class="section--text_container_table_element">
-            логистики и туризм;
+            логистики и туризм
           </li>
           <li class="section--text_container_table_element">
-            строительства и дизайна;
+            строительства и дизайна
           </li>
           <li class="section--text_container_table_element">
-            визуализации и мониторинга природных явлений;
+            визуализации и мониторинга природных явлений
           </li>
           <li class="section--text_container_table_element">
-            визуализации различных географических статистических данных.
+            визуализации различных географических статистических данных
           </li>
         </ul>
       </div>
@@ -177,7 +177,7 @@ export default {
     // https://www.amcharts.com/docs/v5/charts/map-chart/map-line-series/
     let lineSeries = chart.series.push(am5map.MapLineSeries.new(root, {}));
     lineSeries.mapLines.template.setAll({
-      stroke: am5.color(0xffffff),
+      stroke: am5.color(0x000000),
       strokeOpacity: 0.3,
     });
 
@@ -233,7 +233,7 @@ export default {
       scale: 0.06,
       centerY: am5.p50,
       centerX: am5.p50,
-      fill: am5.color(0xffffff),
+      fill: am5.color(0x000000),
     });
 
     planeSeries.bullets.push(function () {
@@ -280,7 +280,7 @@ export default {
     this.root = root;
   },
 
-  beforeDestroy() {
+  beforeUnmount() {
     if (this.root) {
       this.root.dispose();
     }
@@ -296,7 +296,8 @@ export default {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
+  padding-bottom: 100px;
 }
 
 .section {
@@ -388,7 +389,7 @@ export default {
     justify-self: center;
     align-self: center;
     border-radius: 10px;
-    border: 1px solid rgba($color: #ffffff, $alpha: 0.3);
+    border: 1px solid rgba($color: #000000, $alpha: 0.3);
   }
 }
 
@@ -398,7 +399,7 @@ export default {
 }
 
 .right-border {
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .gis {
@@ -406,7 +407,7 @@ export default {
 }
 
 .map_picture {
-  background-image: url(../assets/pic32.jpg);
+  background-image: url(../assets/road-map.png);
 }
 
 @media (max-width: 1500px) {
