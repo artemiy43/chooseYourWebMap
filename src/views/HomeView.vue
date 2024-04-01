@@ -115,7 +115,7 @@
 
     &--link {
       background-color: transparent;
-      color: white;
+      color: rgb(0, 0, 0);
       width: 320px;
       height: 150px;
       text-align: center;
@@ -127,7 +127,7 @@
       font-size: 26px;
       line-height: 30px;
       opacity: 1;
-      border: 1px solid transparent;
+      border: 1px solid black;
       transition: all 1s ease-in-out;
     }
   }

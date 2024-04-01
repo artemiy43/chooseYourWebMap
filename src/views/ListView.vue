@@ -301,10 +301,10 @@ input {
     gap: 15px;
   }
 
-  // &--button:hover {
-  //   box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.7);
-  //   transition: all 0.5s ease-in-out;
-  // }
+  &--button:hover {
+    cursor: pointer;
+    border: 2px solid rgba($color: #000000, $alpha: 0.8);
+  }
 
   &--list {
     width: 100%;

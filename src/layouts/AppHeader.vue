@@ -52,7 +52,7 @@
   }
   &--link:hover {
     opacity: 0.8;
-    border: 1px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
   }
   // &--logo {
   //   width: 200px;

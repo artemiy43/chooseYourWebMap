@@ -218,6 +218,12 @@ const getMapFrameworks = () => {
     border-radius: 5px;
   }
 
+  &--link:hover {
+    box-shadow: 9px 9px 2px 1px rgba(104, 89, 89, 0.4);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
   @media (max-width: 1100px) {
     .main {
       &--container {
