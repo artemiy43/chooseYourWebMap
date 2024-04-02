@@ -23,7 +23,8 @@
     "frameworks": ["react"],
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией и большим сообществом. Библиотека обладает широким функционалом и связана с экосистемой Google, подходит для разного рода проектов.",
     "github": "https://github.com/googlemaps/",
-    "playground": "https://jsfiddle.net/user2314737/x4gM4/"
+    "playground": "https://jsfiddle.net/user2314737/x4gM4/",
+    "russian": false
   },
   {
     "id": 2,
@@ -49,7 +50,8 @@
     "frameworks": ["react", "vue"],
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией и хорошей детализацией на территории Российской Федерации. Библиотека обладает широким функционалом и связана с экосистемой Яндекс, подходит для разного рода российских проектов.",
     "github": "https://github.com/yandex/mapsapi-examples",
-    "playground": "https://jsfiddle.net/sozonov/ehL38fr1/"
+    "playground": "https://jsfiddle.net/sozonov/ehL38fr1/",
+    "russian": true
   },
   {
     "id": 3,
@@ -75,7 +77,8 @@
     "frameworks": ["react", "vue", "angular", "ember"],
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией. Библиотека обладает широким функционалом, поэтому подходит для разного рода проектов.",
     "github": "https://github.com/Esri/arcgis-js-api",
-    "playground": "https://jsfiddle.net/landsapi/1d0tLarw/"
+    "playground": "https://jsfiddle.net/landsapi/1d0tLarw/",
+    "russian": false
   },
   {
     "id": 4,
@@ -101,7 +104,8 @@
     "frameworks": [],
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией. Библиотека обладает ограниченным функционалом и связана с экосистемой Microsoft, поэтому подходит для разного рода проектов с ограниченным функционалом..",
     "github": "https://github.com/microsoft/BingMapsV8CodeSamples",
-    "playground": "https://jsfiddle.net/slead/797fq4a4/"
+    "playground": "https://jsfiddle.net/slead/797fq4a4/",
+    "russian": false
   },
   {
     "id": 5,
@@ -127,7 +131,8 @@
     "frameworks": ["react", "vue", "angular", "ember"],
     "recommendation": "Библиотека является полностью бесплатной, однако с ограниченным функционалом. Хорошо подходит для пет-проектов и проектов для некоммерческого использования с ограниченным функционалом.",
     "github": "https://github.com/openlayers/openlayers",
-    "playground": "https://jsfiddle.net/ircama/r3a4t201/"
+    "playground": "https://jsfiddle.net/ircama/r3a4t201/",
+    "russian": false
   },
   {
     "id": 6,
@@ -153,7 +158,8 @@
     "frameworks": ["react", "vue", "angular", "ember"],
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией. Библиотека обладает широким функционалом, поэтому подходит для разного рода проектов.",
     "github": "https://github.com/mapbox/mapbox-gl-js",
-    "playground": "https://jsfiddle.net/tristen/y634prdL/"
+    "playground": "https://jsfiddle.net/tristen/y634prdL/",
+    "russian": false
   },
   {
     "id": 7,
@@ -187,7 +193,8 @@
     ],
     "recommendation": "Библиотека подходит для проектов с визуализацией различной статистической информации. Библиотека легка в освоении и кастомизации, обладает подробной документацией.",
     "github": "https://github.com/amcharts/amcharts5",
-    "playground": "https://jsfiddle.net/amcharts/tn7cJ/"
+    "playground": "https://jsfiddle.net/amcharts/tn7cJ/",
+    "russian": false
   },
   {
     "id": 8,
@@ -213,6 +220,7 @@
     "frameworks": ["react", "vue"],
     "recommendation": "Библиотека подходит для проектов со сложными 3D-сценами. Библиотека сложна в освоении и кастомизации, обладает подробной документацией.",
     "github": "https://github.com/CesiumGS/cesium",
-    "playground": "https://jsfiddle.net/landsapi/rLv19eso/"
+    "playground": "https://jsfiddle.net/landsapi/rLv19eso/",
+    "russian": false
   }
 ]

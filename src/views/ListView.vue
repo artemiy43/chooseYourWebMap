@@ -147,12 +147,27 @@
                 >поддержка и/или открытый форум от разработчиков</label
               >
             </div>
+
+            <div>
+              <input
+                type="checkbox"
+                id="russian"
+                name="russian"
+                @input="
+                  mapStore.filters[$event.target.name] = $event.target.checked
+                "
+              />
+              <label for="russian">От российских разработчиков</label>
+            </div>
           </div>
         </fieldset>
+        <!-- filters--list_section_container_big_formats
+        filters--list_section_container_big_frameworks -->
         <fieldset class="filters--list_section">
           <legend class="filters--legend">Доступность</legend>
 
-          <div class="filters--list_section_container_big">
+          <fieldset class="filters--list_section_container_big">
+            <legend class="filters--legend">Форматы данных</legend>
             <div v-for="dataFormat in dataFormats" :key="dataFormat">
               <input
                 type="checkbox"
@@ -165,9 +180,10 @@
               />
               <label :for="dataFormat">{{ dataFormat }}</label>
             </div>
-          </div>
+          </fieldset>
 
-          <div class="filters--list_section_container_big">
+          <fieldset class="filters--list_section_container_big">
+            <legend class="filters--legend">Фреймворки</legend>
             <div v-for="framework in frameworks" :key="framework">
               <input
                 type="checkbox"
@@ -178,7 +194,7 @@
               />
               <label :for="framework">{{ framework + ".js" }}</label>
             </div>
-          </div>
+          </fieldset>
         </fieldset>
       </div>
       <!-- </transition> -->
@@ -260,7 +276,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 10px;
+  //gap: 10px;
   box-sizing: border-box;
 
   &--search_container {
@@ -313,10 +329,14 @@ input {
     // border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
     display: flex;
     flex-direction: row;
+    box-sizing: content-box;
+    justify-content: center;
   }
 
   &--list_section {
-    width: 50%;
+    width: calc(50% - 40px);
+    //margin: 0;
+    //padding: 0;
     margin: 10px;
     padding: 10px;
     display: flex;
@@ -326,6 +346,7 @@ input {
     gap: 20px;
     border-radius: 10px;
     min-inline-size: min-content;
+    box-sizing: border-box;
   }
 
   // &--list_animation {
@@ -356,6 +377,7 @@ input {
 
   &--list_section_container_big {
     width: calc(50% - 40px);
+    margin: 0;
     //height: 100%;
     display: flex;
     flex-direction: column;
@@ -368,7 +390,34 @@ input {
     box-sizing: border-box;
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
   }
+
+  // &--list_section_container_big_formats::before {
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   top: -15px;
+  //   left: 20%;
+  //   right: 0;
+  //   bottom: 0;
+  //   content: "Форматы данных";
+  //   background-color: transparent;
+  //   font-size: 18px;
+  // }
+
+  // &--list_section_container_big_frameworks::before {
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   top: -15px;
+  //   left: 25%;
+  //   right: 0;
+  //   bottom: 0;
+  //   content: "Фреймворки";
+  //   background-color: transparent;
+  //   font-size: 18px;
+  // }
 }
 
 .map_list {
@@ -533,6 +582,14 @@ input {
       margin: 0;
       box-sizing: border-box;
     }
+
+    // &--list_section_container_big_formats::before {
+    //   left: 35%;
+    // }
+
+    // &--list_section_container_big_frameworks::before {
+    //   left: 40%;
+    // }
   }
 
   input {
