@@ -14,4 +14,12 @@ export default defineConfig({
     globals: true,
     environment: "happy-dom",
   },
+  server: {
+    watch: {
+      usePolling: true,
+    },
+    host: true,
+    strictPort: true,
+    port: 3000,
+  },
 });
