@@ -12,7 +12,7 @@
         <span>Зачем нужны веб-карты?</span>
       </router-link>
       <router-link class="main_container_links--link" to="/list">
-        <span>Список современных библиотек для создания веб-карт</span>
+        <span>Список современных библиотек для создания веб-картт</span>
       </router-link>
     </section>
     <img src="../assets/planet.gif" alt="планета" class="main_pic" />
