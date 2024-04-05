@@ -24,7 +24,8 @@
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией и большим сообществом. Библиотека обладает широким функционалом и связана с экосистемой Google, подходит для разного рода проектов.",
     "github": "https://github.com/googlemaps/",
     "playground": "https://jsfiddle.net/user2314737/x4gM4/",
-    "russian": false
+    "russian": false,
+    "foreign": true
   },
   {
     "id": 2,
@@ -51,10 +52,39 @@
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией и хорошей детализацией на территории Российской Федерации. Библиотека обладает широким функционалом и связана с экосистемой Яндекс, подходит для разного рода российских проектов.",
     "github": "https://github.com/yandex/mapsapi-examples",
     "playground": "https://jsfiddle.net/sozonov/ehL38fr1/",
-    "russian": true
+    "russian": true,
+    "foreign": false
   },
   {
     "id": 3,
+    "name": "2gis",
+    "src": "2gis-Logo.png",
+    "createdAt": 1999,
+    "licence": "2gis copyright",
+    "views": ["flatMap"],
+    "viewsRu": ["плоская карта"],
+    "castomization": true,
+    "layersChange": true,
+    "services": true,
+    "heatMap": true,
+    "clustering": true,
+    "graphics": true,
+    "analysData": false,
+    "ApiConnection": true,
+    "dataFormats": ["GeoJSON"],
+    "dependence": false,
+    "currentBrowsers": true,
+    "documentation": "https://docs.2gis.com/ru/mapgl/overview",
+    "helpForDevelopers": true,
+    "frameworks": [],
+    "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией и хорошей детализацией на территории Российской Федерации. Библиотека обладает широким функционалом и связана с экосистемой Яндекс, подходит для разного рода российских проектов.",
+    "github": "https://github.com/2gis",
+    "playground": "https://jsfiddle.net/sozonov/ehL38fr1/",
+    "russian": true,
+    "foreign": false
+  },
+  {
+    "id": 4,
     "name": "Esri ArcGIS",
     "src": "esriarcgis.png",
     "createdAt": 2008,
@@ -78,10 +108,11 @@
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией. Библиотека обладает широким функционалом, поэтому подходит для разного рода проектов.",
     "github": "https://github.com/Esri/arcgis-js-api",
     "playground": "https://jsfiddle.net/landsapi/1d0tLarw/",
-    "russian": false
+    "russian": false,
+    "foreign": true
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Bing Maps",
     "src": "bing-maps.jpg",
     "createdAt": 2005,
@@ -105,10 +136,11 @@
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией. Библиотека обладает ограниченным функционалом и связана с экосистемой Microsoft, поэтому подходит для разного рода проектов с ограниченным функционалом..",
     "github": "https://github.com/microsoft/BingMapsV8CodeSamples",
     "playground": "https://jsfiddle.net/slead/797fq4a4/",
-    "russian": false
+    "russian": false,
+    "foreign": true
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "OpenLayers",
     "src": "openlayers.png",
     "createdAt": 2006,
@@ -132,10 +164,11 @@
     "recommendation": "Библиотека является полностью бесплатной, однако с ограниченным функционалом. Хорошо подходит для пет-проектов и проектов для некоммерческого использования с ограниченным функционалом.",
     "github": "https://github.com/openlayers/openlayers",
     "playground": "https://jsfiddle.net/ircama/r3a4t201/",
-    "russian": false
+    "russian": false,
+    "foreign": true
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Mapbox",
     "src": "mapbox.png",
     "createdAt": 2010,
@@ -159,10 +192,11 @@
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией. Библиотека обладает широким функционалом, поэтому подходит для разного рода проектов.",
     "github": "https://github.com/mapbox/mapbox-gl-js",
     "playground": "https://jsfiddle.net/tristen/y634prdL/",
-    "russian": false
+    "russian": false,
+    "foreign": true
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "amCharts 5",
     "src": "amCharts5.png",
     "createdAt": 2021,
@@ -194,10 +228,11 @@
     "recommendation": "Библиотека подходит для проектов с визуализацией различной статистической информации. Библиотека легка в освоении и кастомизации, обладает подробной документацией.",
     "github": "https://github.com/amcharts/amcharts5",
     "playground": "https://jsfiddle.net/amcharts/tn7cJ/",
-    "russian": false
+    "russian": false,
+    "foreign": true
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Cesium",
     "src": "cesium.png",
     "createdAt": 2012,
@@ -221,6 +256,7 @@
     "recommendation": "Библиотека подходит для проектов со сложными 3D-сценами. Библиотека сложна в освоении и кастомизации, обладает подробной документацией.",
     "github": "https://github.com/CesiumGS/cesium",
     "playground": "https://jsfiddle.net/landsapi/rLv19eso/",
-    "russian": false
+    "russian": false,
+    "foreign": true
   }
 ]

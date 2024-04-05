@@ -17,6 +17,7 @@ export const useMapStore = defineStore("map", {
       dataFormats: [],
       frameworks: [],
       russian: false,
+      foreign: false,
     },
   }),
   getters: {

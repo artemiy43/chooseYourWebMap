@@ -28,6 +28,7 @@
                 id="flatMap"
                 name="flatMap"
                 @input="mapStore.addView('flatMap', $event.target.checked)"
+                :checked="mapStore.filters.views.includes('flatMap')"
               />
               <label for="flatMap">плоская карта</label>
             </div>
@@ -37,6 +38,7 @@
                 id="globus"
                 name="globus"
                 @input="mapStore.addView('globus', $event.target.checked)"
+                :checked="mapStore.filters.views.includes('globus')"
               />
               <label for="globus">виртуальный глобус</label>
             </div>
@@ -51,6 +53,7 @@
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
+                :checked="mapStore.filters.clustering"
               />
               <label for="clustering">кластеризация</label>
             </div>
@@ -62,6 +65,7 @@
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
+                :checked="mapStore.filters.heatMap"
               />
               <label for="heatMap">тепловые карты</label>
             </div>
@@ -76,6 +80,7 @@
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
+                :checked="mapStore.filters.analysData"
               />
               <label for="analysData">сервисы для анализа данных</label>
             </div>
@@ -88,6 +93,7 @@
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
+                :checked="mapStore.filters.services"
               />
               <label for="services"
                 >дополнительные сервисы (геолокация, маршрутизация и др)</label
@@ -104,6 +110,7 @@
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
+                :checked="mapStore.filters.graphics"
               />
               <label for="graphics">3D-объекты</label>
             </div>
@@ -116,6 +123,7 @@
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
+                :checked="mapStore.filters.layersChange"
               />
               <label for="layersChange">смена слоёв данных</label>
             </div>
@@ -130,6 +138,7 @@
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
+                :checked="mapStore.filters.ApiConnection"
               />
               <label for="ApiConnection">подключение по API или CDN</label>
             </div>
@@ -142,12 +151,15 @@
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
+                :checked="mapStore.filters.helpForDevelopers"
               />
               <label for="helpForDevelopers"
                 >поддержка и/или открытый форум от разработчиков</label
               >
             </div>
+          </div>
 
+          <div class="filters--list_section_container">
             <div>
               <input
                 type="checkbox"
@@ -156,8 +168,22 @@
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
+                :checked="mapStore.filters.russian"
               />
               <label for="russian">От российских разработчиков</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                id="foreign"
+                name="foreign"
+                @input="
+                  mapStore.filters[$event.target.name] = $event.target.checked
+                "
+                :checked="mapStore.filters.foreign"
+              />
+              <label for="foreign">От иностранных разработчиков</label>
             </div>
           </div>
         </fieldset>
