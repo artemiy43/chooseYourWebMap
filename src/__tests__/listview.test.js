@@ -11,37 +11,20 @@ describe("listview with store", () => {
   });
 
   test("mount component", async () => {
-    //expect(ListView).toBeTruthy();
-
     const wrapper = mount(ListView);
     expect(wrapper.exists).toBeTruthy();
-    //expect(wrapper.text()).toContain("Фильтры");
-    //expect(wrapper.find("button").text()).toBe("Фильтры");
   });
 
   test("check text", async () => {
-    //expect(ListView).toBeTruthy();
-
     const wrapper = mount(ListView);
-    //expect(wrapper.exists).toBeTruthy();
     expect(wrapper.text()).toContain("Фильтры");
-    //expect(wrapper.find("button").text()).toBe("Фильтры");
   });
 
   test("check pinia store", async () => {
     expect(ListView).toBeTruthy();
 
     const wrapper = mount(ListView);
-    //wrapper.find('[type="menu"]').trigger("click");
-    //expect(wrapper.find('[data-test="filters"]').exists).toBeTruthy();
-    //expect(wrapper.get("#CZML").exists).toBeTruthy();
-    //const input = wrapper.find("#CZML").trigger("change");
-    //await button.setChecked();
-    //expect(wrapper.find('#react');
-    //expect(button.is('')).toBe("Фильтры");
-    //expect(wrapper.text()).toContain("Фильтры");
-    //wrapper.no
-    expect(mapStore.maps.length).toBe(8);
-    expect(mapStore.getFilteredMaps.length).toBe(8);
+    expect(mapStore.maps.length).toBe(9);
+    expect(mapStore.getFilteredMaps.length).toBe(9);
   });
 });
