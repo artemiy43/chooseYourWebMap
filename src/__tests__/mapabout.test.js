@@ -1,6 +1,6 @@
 import { mount } from "@vue/test-utils";
 import MapAbout from "../components/MapAbout.vue";
-import { expect, test, describe } from "vitest";
+import { expect, test } from "vitest";
 
 test("mount component", async () => {
   const wrapper = mount(MapAbout, {

@@ -1,4 +1,4 @@
-import { mount, RouterLinkStub } from "@vue/test-utils";
+import { mount } from "@vue/test-utils";
 import ListView from "../views/ListView.vue";
 import { expect, test, describe, beforeEach } from "vitest";
 import { createPinia, setActivePinia } from "pinia";
@@ -13,7 +13,7 @@ describe("listview with store", () => {
   test("mount component", async () => {
     const wrapper = mount(ListView, {
       stubs: {
-        RouterLink: RouterLinkStub,
+        stubs: ["router-link"],
       },
     });
     expect(wrapper.exists).toBeTruthy();
@@ -22,7 +22,7 @@ describe("listview with store", () => {
   test("check text", async () => {
     const wrapper = mount(ListView, {
       stubs: {
-        RouterLink: RouterLinkStub,
+        stubs: ["router-link"],
       },
     });
     expect(wrapper.text()).toContain("Фильтры");
@@ -33,7 +33,7 @@ describe("listview with store", () => {
 
     const wrapper = mount(ListView, {
       stubs: {
-        RouterLink: RouterLinkStub,
+        stubs: ["router-link"],
       },
     });
     expect(mapStore.maps.length).toBe(9);

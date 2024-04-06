@@ -1,13 +1,13 @@
-import { mount, RouterLinkStub } from "@vue/test-utils";
+import { mount } from "@vue/test-utils";
 import HomeView from "../views/HomeView.vue";
-import { expect, test, describe } from "vitest";
+import { expect, test } from "vitest";
 
 test("mount component", async () => {
   expect(HomeView).toBeTruthy();
 
   const wrapper = mount(HomeView, {
     stubs: {
-      RouterLink: RouterLinkStub,
+      stubs: ["router-link"],
     },
   });
   expect(wrapper.exists).toBeTruthy();
@@ -18,7 +18,7 @@ test("check text", async () => {
 
   const wrapper = mount(HomeView, {
     stubs: {
-      RouterLink: RouterLinkStub,
+      stubs: ["router-link"],
     },
   });
   expect(wrapper.text()).toContain("Choose Your Web Map");
