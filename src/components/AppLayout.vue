@@ -22,9 +22,6 @@ watch(
         console.log("сработало");
         console.log(meta.layout);
         const component = await import(`../layouts/${meta.layout}.vue`);
-        // const component = defineAsyncComponent(() =>
-        //   import(`./${meta.layout}.vue`)
-        // );
         console.log(component);
         layout.value = component?.default || AppLayoutDefault;
       } else {

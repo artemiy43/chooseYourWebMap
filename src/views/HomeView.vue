@@ -31,8 +31,6 @@
   text-align: center;
   color: rgb(0, 0, 0);
   font-size: 30px;
-  // background-color: white;
-  // color: black;
 }
 
 .main_pic {
@@ -68,31 +66,13 @@
     line-height: 30px;
     opacity: 1;
     border: 1px solid transparent;
-    // transition: all 1s ease-in-out;
     border: 1px solid rgb(0, 0, 0);
   }
   &--link:hover {
     opacity: 0.8;
     border: 3px solid rgb(0, 0, 0);
   }
-  //   &--logo {
-  //     width: 200px;
-  //     height: 150px;
-  //     border-radius: 30px;
-  //     margin-left: 20px;
-  //     background-image: url("../assets/ITMO_University.png");
-  //     background-position: center;
-  //     background-repeat: no-repeat;
-  //     background-size: cover;
-  //     background-color: white;
-  //   }
 }
-// .header_container {
-//   width: 100%;
-//   display: flex;
-//   flex-direction: row;
-//   gap: 30px;
-// }
 
 @media (max-width: 1630px) {
   .main_container_text--text {

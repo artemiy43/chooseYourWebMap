@@ -89,7 +89,6 @@ import { Map } from "../components/index";
 
 .section {
   width: 100%;
-  //min-height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,7 +137,6 @@ import { Map } from "../components/index";
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    //gap: 10px;
     font-size: 18px;
     line-height: 30px;
     list-style: none;
@@ -226,16 +224,6 @@ import { Map } from "../components/index";
     }
   }
 }
-
-// @media (max-width: 900px) {
-//   .section {
-//     &--text_container_table_element {
-//       width: 100%;
-//       height: 100%;
-//       box-sizing: border-box;
-//     }
-//   }
-// }
 
 @media (max-width: 770px) {
   .section {

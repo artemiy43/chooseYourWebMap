@@ -16,7 +16,6 @@
           Фильтры
         </button>
       </div>
-      <!-- <transition name="fade"> -->
       <div v-if="filtersOpened" class="filters--list">
         <fieldset class="filters--list_section">
           <legend class="filters--legend">Функциональность</legend>
@@ -187,8 +186,6 @@
             </div>
           </div>
         </fieldset>
-        <!-- filters--list_section_container_big_formats
-        filters--list_section_container_big_frameworks -->
         <fieldset class="filters--list_section">
           <legend class="filters--legend">Доступность</legend>
 
@@ -223,7 +220,6 @@
           </fieldset>
         </fieldset>
       </div>
-      <!-- </transition> -->
     </div>
     <h2 class="count">
       {{ mapStore.getFilteredMaps.length + " из " + mapStore.maps.length }}
@@ -257,17 +253,6 @@ const mapStore = useMapStore();
 const openMenu = () => {
   filtersOpened.value = !filtersOpened.value;
 };
-
-// const getImageUrl = (path) => {
-//   const publicUrl = "@/assets";
-//   return `${publicUrl}${path}`;
-//   // return `${publicUrl}/${path}`;
-// };
-
-// function getImageUrl(name) {
-//   const url = new URL(`/src/assets/${name}`, import.meta.url).href;
-//   return url;
-// }
 </script>
 
 <style scoped lang="scss">
@@ -294,7 +279,6 @@ input {
 
 .filters {
   width: 100%;
-  //height: 100%;
   background-color: #6b99df;
   margin-bottom: 30px;
   border-radius: 10px;
@@ -302,7 +286,6 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  //gap: 10px;
   box-sizing: border-box;
 
   &--search_container {
@@ -352,7 +335,6 @@ input {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    // border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
     display: flex;
     flex-direction: row;
     box-sizing: content-box;
@@ -361,8 +343,6 @@ input {
 
   &--list_section {
     width: calc(50% - 40px);
-    //margin: 0;
-    //padding: 0;
     margin: 10px;
     padding: 10px;
     display: flex;
@@ -375,11 +355,6 @@ input {
     box-sizing: border-box;
   }
 
-  // &--list_animation {
-  //   animation: opening 1s ease-in-out 1s 1 alternate;
-  //   transition: all 0.5s ease-in-out;
-  // }
-
   &--legend {
     padding: 8px;
     font-size: 18px;
@@ -387,7 +362,6 @@ input {
 
   &--list_section_container {
     width: calc(50% - 40px);
-    //height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -404,7 +378,6 @@ input {
   &--list_section_container_big {
     width: calc(50% - 40px);
     margin: 0;
-    //height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -418,37 +391,10 @@ input {
     line-height: 24px;
     text-align: center;
   }
-
-  // &--list_section_container_big_formats::before {
-  //   width: 100%;
-  //   height: 100%;
-  //   position: absolute;
-  //   top: -15px;
-  //   left: 20%;
-  //   right: 0;
-  //   bottom: 0;
-  //   content: "Форматы данных";
-  //   background-color: transparent;
-  //   font-size: 18px;
-  // }
-
-  // &--list_section_container_big_frameworks::before {
-  //   width: 100%;
-  //   height: 100%;
-  //   position: absolute;
-  //   top: -15px;
-  //   left: 25%;
-  //   right: 0;
-  //   bottom: 0;
-  //   content: "Фреймворки";
-  //   background-color: transparent;
-  //   font-size: 18px;
-  // }
 }
 
 .map_list {
   width: 100%;
-  //height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -458,16 +404,11 @@ input {
   padding: 0;
   padding-bottom: 80px;
   justify-items: center;
-  //align-content: center;
-  // justify-content: center;
-  // align-items: center;
 
   &--element {
-    //width: calc(80% - 20px);
     width: 350px;
     height: 400px;
     background-color: rgba($color: #ffffff, $alpha: 1);
-    //background-color: transparent;
     border: 2px solid rgba($color: #000000, $alpha: 0.2);
     border-radius: 5px;
     display: flex;
@@ -480,6 +421,7 @@ input {
   }
 
   &--element:hover {
+    transform: translateX(-5px);
     box-shadow: 12px 12px 2px 1px rgba(104, 89, 89, 0.4);
     transition: all 0.5s ease-in-out;
   }
@@ -508,18 +450,6 @@ input {
   }
 }
 
-// .fade-enter-active {
-//   transition: all 0.5s ease;
-// }
-
-// .fade-leave-active {
-//   transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
-// }
-
-// .fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
-//   opacity: 0;
-// }
-
 @media (max-width: 1010px) {
   .filters {
     margin-bottom: 20px;
@@ -530,7 +460,6 @@ input {
 
     &--list_section_container {
       width: calc(50% - 40px);
-      //height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -546,7 +475,6 @@ input {
 
     &--list_section_container_big {
       width: calc(50% - 40px);
-      //height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -566,7 +494,6 @@ input {
   .filters {
     &--list_section_container {
       width: 100%;
-      //height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -582,7 +509,6 @@ input {
 
     &--list_section_container_big {
       width: 100%;
-      //height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -608,14 +534,6 @@ input {
       margin: 0;
       box-sizing: border-box;
     }
-
-    // &--list_section_container_big_formats::before {
-    //   left: 35%;
-    // }
-
-    // &--list_section_container_big_frameworks::before {
-    //   left: 40%;
-    // }
   }
 
   input {

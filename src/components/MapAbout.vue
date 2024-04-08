@@ -78,10 +78,6 @@
           Форматы пространственных данных:
           <span class="main--map_quality_value">{{ getMapFormats() }} </span>
         </li>
-        <!-- <li class="main--map_quality">
-          Ссылка на документацию:
-          <span class="main--map_quality_value">{{ map.documentation }}</span>
-        </li> -->
         <li class="main--map_quality">
           Наличие поддержки от разработчиков библиотеки для ответов на вопросы
           или наличие открытого форума для общения и передачи опыта работы с
@@ -130,6 +126,13 @@
             target="_blank"
             >Jsfiddle playground example</a
           >
+          <a
+            v-if="map.youtube"
+            class="main--company_links_youtube main--company_links_element"
+            :href="map.youtube"
+            target="_blank"
+            >Youtube</a
+          >
         </div>
       </div>
     </div>
@@ -163,7 +166,6 @@ const getMapFrameworks = () => {
     return string;
   }
 };
-//const emit = defineEmits(["update:modelValue"]);
 </script>
 
 <style lang="scss" scoped>
@@ -212,8 +214,6 @@ const getMapFrameworks = () => {
     height: 500px;
     object-fit: contain;
     object-position: center;
-    //border: 1px solid rgba($color: #ffffff, $alpha: 0.3);
-    //padding: 10px;
   }
 
   &--link {
@@ -225,6 +225,7 @@ const getMapFrameworks = () => {
   }
 
   &--link:hover {
+    transform: translateX(-5px);
     box-shadow: 9px 9px 2px 1px rgba(104, 89, 89, 0.4);
     transition: all 0.5s ease-in-out;
     cursor: pointer;
@@ -245,6 +246,7 @@ const getMapFrameworks = () => {
     text-align: center;
   }
   &--company_links_element:hover {
+    transform: translateX(-5px);
     box-shadow: 9px 9px 2px 1px rgba(104, 89, 89, 0.4);
     transition: all 0.5s ease-in-out;
     cursor: pointer;
@@ -278,6 +280,21 @@ const getMapFrameworks = () => {
     font-size: 24px;
     line-height: 20px;
   }
+
+  &--company_links_youtube {
+    margin-right: 25px;
+    width: 200px;
+    height: 75px;
+    background-color: rgb(189, 7, 7);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    line-height: 20px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -299,7 +316,7 @@ const getMapFrameworks = () => {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .main {
     &--company_links {
       flex-direction: column;
@@ -311,6 +328,11 @@ const getMapFrameworks = () => {
     }
 
     &--company_links_playground {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
+    &--company_links_youtube {
       margin-right: 0;
       margin-bottom: 15px;
     }

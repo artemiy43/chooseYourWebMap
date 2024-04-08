@@ -24,6 +24,7 @@
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией и большим сообществом. Библиотека обладает широким функционалом и связана с экосистемой Google, подходит для разного рода проектов.",
     "github": "https://github.com/googlemaps/",
     "playground": "https://jsfiddle.net/user2314737/x4gM4/",
+    "youtube": "https://www.youtube.com/@googlemaps/videos",
     "russian": false,
     "foreign": true
   },
@@ -51,6 +52,7 @@
     "frameworks": ["react", "vue"],
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией и хорошей детализацией на территории Российской Федерации. Библиотека обладает широким функционалом и связана с экосистемой Яндекс, подходит для разного рода российских проектов.",
     "github": "https://github.com/yandex/mapsapi-examples",
+    "youtube": "https://www.youtube.com/@yandex_maps/videos",
     "playground": "https://jsfiddle.net/sozonov/ehL38fr1/",
     "russian": true,
     "foreign": false
@@ -79,6 +81,7 @@
     "frameworks": [],
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией и хорошей детализацией на территории Российской Федерации. Библиотека обладает широким функционалом и связана с экосистемой Яндекс, подходит для разного рода российских проектов.",
     "github": "https://github.com/2gis",
+    "youtube": "https://www.youtube.com/@2GISvideo/videos",
     "playground": "https://jsfiddle.net/sozonov/ehL38fr1/",
     "russian": true,
     "foreign": false
@@ -107,6 +110,7 @@
     "frameworks": ["react", "vue", "angular", "ember"],
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией. Библиотека обладает широким функционалом, поэтому подходит для разного рода проектов.",
     "github": "https://github.com/Esri/arcgis-js-api",
+    "youtube": "https://www.youtube.com/@EsriDevs/videos",
     "playground": "https://jsfiddle.net/landsapi/1d0tLarw/",
     "russian": false,
     "foreign": true
@@ -191,6 +195,7 @@
     "frameworks": ["react", "vue", "angular", "ember"],
     "recommendation": "Библиотека легка в освоении и кастомизации, обладает подробной документацией. Библиотека обладает широким функционалом, поэтому подходит для разного рода проектов.",
     "github": "https://github.com/mapbox/mapbox-gl-js",
+    "youtube": "https://www.youtube.com/@MapboxOfficial/videos",
     "playground": "https://jsfiddle.net/tristen/y634prdL/",
     "russian": false,
     "foreign": true
@@ -227,6 +232,7 @@
     ],
     "recommendation": "Библиотека подходит для проектов с визуализацией различной статистической информации. Библиотека легка в освоении и кастомизации, обладает подробной документацией.",
     "github": "https://github.com/amcharts/amcharts5",
+    "youtube": "https://www.youtube.com/@amcharts3885/videos",
     "playground": "https://jsfiddle.net/amcharts/tn7cJ/",
     "russian": false,
     "foreign": true
