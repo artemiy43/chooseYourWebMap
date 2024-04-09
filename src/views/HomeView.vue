@@ -1,21 +1,31 @@
 <template>
   <main class="main">
     <section class="main_container_text">
-      <h1 class="main_container_text--title">Choose Your Web Map</h1>
-      <span class="main_container_text--text"
-        >Сайт разработан для помощи разработчикам в выборе подходящим для них
-        инструментов в создании веб-карт.</span
-      >
+      <h1 class="main_container_text--title">
+        Choose Your Web Map
+      </h1>
+      <span class="main_container_text--text">Сайт разработан для помощи разработчикам в выборе подходящим для них
+        инструментов в создании веб-карт.</span>
     </section>
     <section class="main_container_links">
-      <router-link class="main_container_links--link" to="/why">
+      <router-link
+        class="main_container_links--link"
+        to="/why"
+      >
         <span>Зачем нужны веб-карты?</span>
       </router-link>
-      <router-link class="main_container_links--link" to="/list">
+      <router-link
+        class="main_container_links--link"
+        to="/list"
+      >
         <span>Список современных библиотек для создания веб-картт</span>
       </router-link>
     </section>
-    <img src="../assets/planet.gif" alt="планета" class="main_pic" />
+    <img
+      src="../assets/planet.gif"
+      alt="планета"
+      class="main_pic"
+    >
   </main>
 </template>
 

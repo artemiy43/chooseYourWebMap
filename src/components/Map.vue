@@ -1,5 +1,8 @@
 <template>
-  <div class="map right-border" ref="chartdiv"></div>
+  <div
+    ref="chartdiv"
+    class="map right-border"
+  />
 </template>
 
 <script>

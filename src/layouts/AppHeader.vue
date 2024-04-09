@@ -1,11 +1,22 @@
 <template>
   <header class="header">
     <!-- <div class="header_container"> -->
-    <router-link class="header--link" to="/"><span>Главная</span></router-link>
-    <router-link class="header--link" to="/why">
+    <router-link
+      class="header--link"
+      to="/"
+    >
+      <span>Главная</span>
+    </router-link>
+    <router-link
+      class="header--link"
+      to="/why"
+    >
       <span>Зачем нужны веб-карты?</span>
     </router-link>
-    <router-link class="header--link" to="/list">
+    <router-link
+      class="header--link"
+      to="/list"
+    >
       <span>Список современных библиотек для создания веб-карт</span>
     </router-link>
     <!-- </div> -->

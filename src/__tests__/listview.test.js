@@ -36,6 +36,7 @@ describe("listview with store", () => {
         stubs: ["router-link"],
       },
     });
+    expect(wrapper.exists).toBeTruthy();
     expect(mapStore.maps.length).toBe(9);
     expect(mapStore.getFilteredMaps.length).toBe(9);
   });

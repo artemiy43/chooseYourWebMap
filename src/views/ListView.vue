@@ -5,8 +5,8 @@
         <button
           type="menu"
           class="filters--button"
-          @click="openMenu"
           data-test="filters"
+          @click="openMenu"
         >
           <img
             src="../assets/filter4.png"
@@ -23,21 +23,21 @@
           <div class="filters--list_section_container">
             <div>
               <input
-                type="checkbox"
                 id="flatMap"
+                type="checkbox"
                 name="flatMap"
-                @input="mapStore.addView('flatMap', $event.target.checked)"
                 :checked="mapStore.filters.views.includes('flatMap')"
+                @input="mapStore.addView('flatMap', $event.target.checked)"
               />
               <label for="flatMap">плоская карта</label>
             </div>
             <div>
               <input
-                type="checkbox"
                 id="globus"
+                type="checkbox"
                 name="globus"
-                @input="mapStore.addView('globus', $event.target.checked)"
                 :checked="mapStore.filters.views.includes('globus')"
+                @input="mapStore.addView('globus', $event.target.checked)"
               />
               <label for="globus">виртуальный глобус</label>
             </div>
@@ -46,25 +46,25 @@
           <div class="filters--list_section_container">
             <div>
               <input
-                type="checkbox"
                 id="clustering"
+                type="checkbox"
                 name="clustering"
+                :checked="mapStore.filters.clustering"
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
-                :checked="mapStore.filters.clustering"
               />
               <label for="clustering">кластеризация</label>
             </div>
             <div>
               <input
-                type="checkbox"
                 id="heatMap"
+                type="checkbox"
                 name="heatMap"
+                :checked="mapStore.filters.heatMap"
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
-                :checked="mapStore.filters.heatMap"
               />
               <label for="heatMap">тепловые карты</label>
             </div>
@@ -73,26 +73,26 @@
           <div class="filters--list_section_container">
             <div>
               <input
-                type="checkbox"
                 id="analysData"
+                type="checkbox"
                 name="analysData"
+                :checked="mapStore.filters.analysData"
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
-                :checked="mapStore.filters.analysData"
               />
               <label for="analysData">сервисы для анализа данных</label>
             </div>
 
             <div>
               <input
-                type="checkbox"
                 id="services"
+                type="checkbox"
                 name="services"
+                :checked="mapStore.filters.services"
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
-                :checked="mapStore.filters.services"
               />
               <label for="services"
                 >дополнительные сервисы (геолокация, маршрутизация и др)</label
@@ -103,26 +103,26 @@
           <div class="filters--list_section_container">
             <div>
               <input
-                type="checkbox"
                 id="graphics"
+                type="checkbox"
                 name="graphics"
+                :checked="mapStore.filters.graphics"
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
-                :checked="mapStore.filters.graphics"
               />
               <label for="graphics">3D-объекты</label>
             </div>
 
             <div>
               <input
-                type="checkbox"
                 id="layersChange"
+                type="checkbox"
                 name="layersChange"
+                :checked="mapStore.filters.layersChange"
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
-                :checked="mapStore.filters.layersChange"
               />
               <label for="layersChange">смена слоёв данных</label>
             </div>
@@ -131,26 +131,28 @@
           <div class="filters--list_section_container">
             <div>
               <input
-                type="checkbox"
                 id="ApiConnection"
+                type="checkbox"
                 name="ApiConnection"
+                :checked="mapStore.filters.ApiConnection"
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
-                :checked="mapStore.filters.ApiConnection"
               />
-              <label for="ApiConnection">подключение по API или CDN</label>
+              <label for="ApiConnection"
+                >необходимость получения API ключа при использовании</label
+              >
             </div>
 
             <div>
               <input
-                type="checkbox"
                 id="helpForDevelopers"
+                type="checkbox"
                 name="helpForDevelopers"
+                :checked="mapStore.filters.helpForDevelopers"
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
-                :checked="mapStore.filters.helpForDevelopers"
               />
               <label for="helpForDevelopers"
                 >поддержка и/или открытый форум от разработчиков</label
@@ -161,26 +163,26 @@
           <div class="filters--list_section_container">
             <div>
               <input
-                type="checkbox"
                 id="russian"
+                type="checkbox"
                 name="russian"
+                :checked="mapStore.filters.russian"
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
-                :checked="mapStore.filters.russian"
               />
               <label for="russian">От российских разработчиков</label>
             </div>
 
             <div>
               <input
-                type="checkbox"
                 id="foreign"
+                type="checkbox"
                 name="foreign"
+                :checked="mapStore.filters.foreign"
                 @input="
                   mapStore.filters[$event.target.name] = $event.target.checked
                 "
-                :checked="mapStore.filters.foreign"
               />
               <label for="foreign">От иностранных разработчиков</label>
             </div>
@@ -193,13 +195,13 @@
             <legend class="filters--legend">Форматы данных</legend>
             <div v-for="dataFormat in dataFormats" :key="dataFormat">
               <input
-                type="checkbox"
                 :id="dataFormat"
+                type="checkbox"
                 :name="dataFormat"
+                :checked="mapStore.filters.dataFormats.includes(dataFormat)"
                 @input="
                   mapStore.addDataFormat(dataFormat, $event.target.checked)
                 "
-                :checked="mapStore.filters.dataFormats.includes(dataFormat)"
               />
               <label :for="dataFormat">{{ dataFormat }}</label>
             </div>
@@ -209,11 +211,11 @@
             <legend class="filters--legend">Фреймворки</legend>
             <div v-for="framework in frameworks" :key="framework">
               <input
-                type="checkbox"
                 :id="framework"
+                type="checkbox"
                 :name="framework"
-                @input="mapStore.addFramework(framework, $event.target.checked)"
                 :checked="mapStore.filters.frameworks.includes(framework)"
+                @input="mapStore.addFramework(framework, $event.target.checked)"
               />
               <label :for="framework">{{ framework + ".js" }}</label>
             </div>

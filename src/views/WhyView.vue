@@ -1,9 +1,10 @@
 <template>
   <main class="main">
     <section class="section">
-      <h1 class="section--title">Что такое веб-карта?</h1>
+      <h1 class="section--title">
+        Что такое веб-карта?
+      </h1>
       <div class="section--container">
-        <!-- <div class="map right-border" ref="chartdiv"></div> -->
         <Map />
         <div class="section--text_container">
           Веб-карта - это представление Земной поверхности и географических
@@ -16,7 +17,9 @@
       </div>
     </section>
     <section class="section">
-      <h1 class="section--title">Что такое ГИС?</h1>
+      <h1 class="section--title">
+        Что такое ГИС?
+      </h1>
       <div class="section--container">
         <ul class="section--text_container_table right-border">
           <li class="section--text_container_table_element">
@@ -40,13 +43,15 @@
             сервис мест и организаций
           </li>
         </ul>
-        <div class="section--picture gis"></div>
+        <div class="section--picture gis" />
       </div>
     </section>
     <section class="section">
-      <h1 class="section--title">Сферы применения веб-карт</h1>
+      <h1 class="section--title">
+        Сферы применения веб-карт
+      </h1>
       <div class="section--container">
-        <div class="section--picture right-border map_picture"></div>
+        <div class="section--picture right-border map_picture" />
         <ul class="section--text_container_table">
           <li class="section--text_container_table_element">
             Геоинформационные сервисы и веб-карты применяются в различных сферах

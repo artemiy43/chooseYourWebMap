@@ -1,6 +1,8 @@
 <template>
   <main class="main">
-    <h1 class="main--title">{{ map.name }}</h1>
+    <h1 class="main--title">
+      {{ map.name }}
+    </h1>
     <div class="main--container">
       <ul class="main--container_list">
         <li class="main--map_quality">
@@ -69,7 +71,7 @@
           </span>
         </li>
         <li class="main--map_quality">
-          Подключение через API:
+          Необходимость получения API ключа при использовании:
           <span class="main--map_quality_value">
             {{ map.ApiConnection ? "Присутствует" : "Отсутствует" }}
           </span>

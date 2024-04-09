@@ -36,9 +36,12 @@ import HelloWorld from './components/HelloWorld.vue'
 
   <app-layout>
     <router-view v-slot="{ Component, route }">
-      <transition name="slide" mode="out-in">
+      <transition
+        name="slide"
+        mode="out-in"
+      >
         <div :key="route.name">
-          <component :is="Component"></component>
+          <component :is="Component" />
         </div>
       </transition>
     </router-view>

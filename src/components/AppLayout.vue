@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { shallowRef, watch, defineAsyncComponent } from "vue";
+import { shallowRef, watch } from "vue";
 import { useRoute } from "vue-router";
 import AppLayoutDefault from "../layouts/AppLayoutDefault.vue";
 
@@ -19,10 +19,10 @@ watch(
     try {
       if (meta.layout) {
         // Пробуем найти компонент из свойства meta и динамически импортировать его
-        console.log("сработало");
-        console.log(meta.layout);
+        //console.log("сработало");
+        //console.log(meta.layout);
         const component = await import(`../layouts/${meta.layout}.vue`);
-        console.log(component);
+        //console.log(component);
         layout.value = component?.default || AppLayoutDefault;
       } else {
         layout.value = AppLayoutDefault;
