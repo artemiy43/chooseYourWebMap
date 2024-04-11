@@ -251,7 +251,7 @@
     "heatMap": false,
     "clustering": false,
     "graphics": true,
-    "analysData": true,
+    "analysData": false,
     "ApiConnection": false,
     "dataFormats": ["GeoJSON", "CZML", "gITF"],
     "dependence": false,
