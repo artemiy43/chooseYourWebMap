@@ -18,6 +18,8 @@ export const useMapStore = defineStore("map", {
       frameworks: [],
       russian: false,
       foreign: false,
+      commercialRestrictions: false,
+      openSource: false,
     },
   }),
   getters: {

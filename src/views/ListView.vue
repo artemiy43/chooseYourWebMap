@@ -187,6 +187,36 @@
               <label for="foreign">От иностранных разработчиков</label>
             </div>
           </div>
+
+          <div class="filters--list_section_container">
+            <div>
+              <input
+                id="commercialRestrictions"
+                type="checkbox"
+                name="commercialRestrictions"
+                :checked="mapStore.filters.commercialRestrictions"
+                @input="
+                  mapStore.filters[$event.target.name] = $event.target.checked
+                "
+              />
+              <label for="commercialRestrictions"
+                >Ограничения на использовании в коммерческих проектах</label
+              >
+            </div>
+
+            <div>
+              <input
+                id="openSource"
+                type="checkbox"
+                name="openSource"
+                :checked="mapStore.filters.openSource"
+                @input="
+                  mapStore.filters[$event.target.name] = $event.target.checked
+                "
+              />
+              <label for="openSource">open source</label>
+            </div>
+          </div>
         </fieldset>
         <fieldset class="filters--list_section">
           <legend class="filters--legend">Доступность</legend>

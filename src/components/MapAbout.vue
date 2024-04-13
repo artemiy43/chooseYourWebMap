@@ -89,9 +89,15 @@
           </span>
         </li>
         <li class="main--map_quality">
-          Зависимость от сторонних библиотек или технологий:
+          Ограничения на использование в коммерческих проектах:
           <span class="main--map_quality_value">
-            {{ map.dependence ? "Присутствует" : "Отсутствует" }}
+            {{ map.commercialRestrictions ? "Присутствуют" : "Отсутствуют" }}
+          </span>
+        </li>
+        <li class="main--map_quality">
+          Open source:
+          <span class="main--map_quality_value">
+            {{ map.openSource ? "Является" : "Не является" }}
           </span>
         </li>
         <li class="main--map_quality">
