@@ -311,7 +311,7 @@ input {
 
 .filters {
   width: 100%;
-  background-color: #6b99df;
+  background-color: $light-blue;
   margin-bottom: 30px;
   border-radius: 10px;
   padding: 10px;
@@ -320,26 +320,26 @@ input {
   justify-content: start;
   box-sizing: border-box;
 
-  &--search_container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    gap: 30px;
-  }
+  // &--search_container {
+  //   width: 100%;
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: start;
+  //   align-items: center;
+  //   gap: 30px;
+  // }
 
-  &--search {
-    width: 400px;
-    height: 60px;
-    border-radius: 5px;
-    background-color: rgba($color: #2b2a2a, $alpha: 0.5);
-    border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
-    color: white;
-    padding: 20px;
-    font-size: 22px;
-    line-height: 20px;
-  }
+  // &--search {
+  //   width: 400px;
+  //   height: 60px;
+  //   border-radius: 5px;
+  //   background-color: rgba($color: #2b2a2a, $alpha: 0.5);
+  //   border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+  //   color: white;
+  //   padding: 20px;
+  //   font-size: 22px;
+  //   line-height: 20px;
+  // }
 
   &--button {
     width: 200px;
@@ -454,7 +454,7 @@ input {
 
   &--element:hover {
     transform: translateX(-5px);
-    box-shadow: 12px 12px 2px 1px rgba(104, 89, 89, 0.4);
+    box-shadow: 12px 12px 2px 1px $shadow-color;
     transition: all 0.5s ease-in-out;
   }
 

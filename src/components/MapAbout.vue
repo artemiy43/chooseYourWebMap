@@ -225,7 +225,7 @@ const getMapFrameworks = () => {
   }
 
   &--link {
-    background-color: rgb(112, 167, 240);
+    background-color: $light-blue;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -234,7 +234,7 @@ const getMapFrameworks = () => {
 
   &--link:hover {
     transform: translateX(-5px);
-    box-shadow: 9px 9px 2px 1px rgba(104, 89, 89, 0.4);
+    box-shadow: 9px 9px 2px 1px $shadow-color;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
   }
@@ -255,7 +255,7 @@ const getMapFrameworks = () => {
   }
   &--company_links_element:hover {
     transform: translateX(-5px);
-    box-shadow: 9px 9px 2px 1px rgba(104, 89, 89, 0.4);
+    box-shadow: 9px 9px 2px 1px $shadow-color;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
   }
@@ -278,7 +278,7 @@ const getMapFrameworks = () => {
     margin-right: 25px;
     width: 200px;
     height: 75px;
-    background-color: rgb(135, 188, 253);
+    background-color: $light-blue;
     color: white;
     border-radius: 10px;
     display: flex;

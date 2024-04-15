@@ -1,31 +1,14 @@
 <template>
   <header class="header">
-    <!-- <div class="header_container"> -->
-    <router-link
-      class="header--link"
-      to="/"
-    >
+    <router-link class="header--link" to="/">
       <span>Главная</span>
     </router-link>
-    <router-link
-      class="header--link"
-      to="/why"
-    >
+    <router-link class="header--link" to="/why">
       <span>Зачем нужны веб-карты?</span>
     </router-link>
-    <router-link
-      class="header--link"
-      to="/list"
-    >
+    <router-link class="header--link" to="/list">
       <span>Список современных библиотек для создания веб-карт</span>
     </router-link>
-    <!-- </div> -->
-    <!-- <div class="header_container">
-      <div class="header--logo"></div>
-      <div class="header--link">
-        <span>Выполнил: Бондарь Артемий Алексеевич</span>
-      </div>
-    </div> -->
   </header>
 </template>
 
@@ -58,24 +41,16 @@
     font-size: 24px;
     line-height: 30px;
     opacity: 1;
-    border: 1px solid black;
+    border: 2px solid black;
     transition: all 1s ease-in-out;
   }
   &--link:hover {
-    opacity: 0.8;
-    border: 3px solid rgb(0, 0, 0);
+    // opacity: 0.8;
+    // border: 3px solid rgb(0, 0, 0);
+    transform: translateX(-5px);
+    box-shadow: 12px 12px 2px 1px $shadow-color;
+    transition: all 0.5s ease-in-out;
   }
-  // &--logo {
-  //   width: 200px;
-  //   height: 150px;
-  //   border-radius: 30px;
-  //   margin-left: 20px;
-  //   background-image: url("../assets/ITMO_University.png");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   background-color: white;
-  // }
 }
 .header_container {
   width: 100%;
