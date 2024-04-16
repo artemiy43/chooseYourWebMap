@@ -23,9 +23,6 @@ export const useMapStore = defineStore("map", {
     },
   }),
   getters: {
-    getMaps: (state) => {
-      return state.maps;
-    },
     getFilteredMaps: (state) => {
       let filteredMaps = state.maps;
       for (let key in state.filters) {
