@@ -3,8 +3,8 @@
     <section class="main_container_text">
       <h1 class="main_container_text--title">Choose Your Web Map</h1>
       <span class="main_container_text--text"
-        >Сайт разработан для помощи разработчикам в выборе подходящим для них
-        инструментов в создании веб-карт.</span
+        >Сайт разработан для помощи разработчикам в выборе подходящего для них
+        инструмента в создании веб-карт.</span
       >
     </section>
     <section class="main_container_links">
@@ -131,7 +131,8 @@
 
   .main_container_links {
     &--link {
-      animation: appearBorder 2s ease-in-out 1s infinite alternate;
+      border: 3px solid rgb(0, 0, 0);
+      //animation: appearBorder 2s ease-in-out 1s infinite alternate;
     }
   }
 }
