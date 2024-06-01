@@ -61,10 +61,10 @@
   },
   {
     "id": 3,
-    "name": "2gis",
+    "name": "2GIS",
     "src": "2gis-Logo.png",
     "createdAt": 1999,
-    "licence": "2gis copyright",
+    "licence": "2GIS copyright",
     "views": ["flatMap"],
     "viewsRu": ["плоская карта"],
     "castomization": true,
