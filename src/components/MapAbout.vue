@@ -130,6 +130,7 @@
           >
           <a
             class="main--company_links_playground main--company_links_element"
+            v-if="map.playground.length !== 0"
             :href="map.playground"
             target="_blank"
             >Jsfiddle playground example</a
