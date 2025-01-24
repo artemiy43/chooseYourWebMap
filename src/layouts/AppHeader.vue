@@ -7,7 +7,7 @@
       <span>Зачем нужны веб-карты?</span>
     </router-link>
     <router-link class="header--link" to="/list">
-      <span>Список современных библиотек для создания веб-карт</span>
+      <span>Список библиотек для создания веб-карт</span>
     </router-link>
   </header>
 </template>
